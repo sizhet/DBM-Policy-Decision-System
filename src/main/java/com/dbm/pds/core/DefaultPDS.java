@@ -4,6 +4,7 @@ import com.dbm.pds.api.*;
 
 import java.util.List;
 
+/*
 public class DefaultPDS<X, S, Y> implements PolicyDecisionSystem<X, Y> {
 
     private final KnowledgeModel<X, Y> knowledge;
@@ -37,4 +38,4 @@ public class DefaultPDS<X, S, Y> implements PolicyDecisionSystem<X, Y> {
 
         return new DecisionResult<>(selected, filtered);
     }
-}
+}*/
