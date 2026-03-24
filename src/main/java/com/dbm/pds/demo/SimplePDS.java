@@ -1,5 +1,6 @@
 package com.dbm.pds.demo;
 
+/*
 import com.dbm.pds.api.*;
 
 import java.util.ArrayList;
@@ -30,4 +31,4 @@ public class SimplePDS implements PolicyDecisionSystem<String, String> {
 
         return new DecisionResult<>(best, candidates);
     }
-}
+}*/
