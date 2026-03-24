@@ -1,0 +1,28 @@
+{
+  "title": "DBM Structural Intelligence Architecture",
+  "upload_type": "software",
+  "description": "Digital Brain Model – Structural Intelligence (DBM-SI) proposes a unified architectural paradigm for intelligence systems centered on structural abstraction rather than function approximation. At its core lies the concept of the Common Concept Core (CCC)—a structural invariant extracted from data, behavior, and trajectories. DBM-SI integrates differential space structures, dual-phase search mechanisms, metric-based matching, and trajectory-driven control into a coherent system capable of perception, abstraction, decision-making, and continuous evolution. Unlike conventional AI systems that rely on statistical fitting or symbolic rules alone, DBM-SI introduces a structural intelligence layer, enabling interpretable, composable, and dynamically evolving intelligence systems.",
+  "creators": [
+    {
+      "name": "Tan, Sizhe"
+    },
+    {
+      "name": "ChatGPT",
+      "affiliation": "OpenAI"
+    }
+  ],
+  "keywords": [
+    "Behavioral CCC",
+    "Trajectory Intelligence",
+    "Hyperlanguage Model",
+    "Sequential Intelligence",
+    "Behavioral Structures",
+    "AI Architecture",
+    "Structural Intelligence"
+  ],
+  "license": "Apache-license",
+  "access_right": "open",
+  "version": "1.0.0",
+  "language": "eng",
+  "publication_date": "TBD"
+}

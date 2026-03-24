@@ -1,0 +1,14 @@
+# Build output
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.*.iml
+development_notes*.txt
+
+# OS
+.DS_Store
+
