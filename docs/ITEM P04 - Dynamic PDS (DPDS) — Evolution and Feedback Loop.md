@@ -13,27 +13,9 @@ PDS(t) = evolving system over time
 
 ## 2. DPDS Core Loop（核心循环）
 
-```mermaid
-flowchart LR
+![Dynamic-PDS-(DPDS).png](../assets/Dynamic-PDS-(DPDS).png)
 
-    S[State (II)]
-    C[Candidates (III)]
-    D[Decision (IV)]
-    A[Action / Outcome]
-    E[Environment Feedback]
-    M[Memory / Archive]
-    P[Policy Update (V)]
-    K[Knowledge Update (I)]
-
-    S --> C
-    C --> D
-    D --> A
-    A --> E
-    E --> M
-    M --> P
-    P --> K
-    K --> S
-```
+---
 
 
 ## 3. Evolution Mechanism（演化机制）

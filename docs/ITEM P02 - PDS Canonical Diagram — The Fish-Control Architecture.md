@@ -5,39 +5,10 @@
 
 ## 1. Canonical Diagram（标准结构图）
 
-```mermaid
-flowchart TB
+![PDS-Canonical-Diagram.png](../assets/PDS-Canonical-Diagram.png)
 
-    V[Policy System (V)\nGoal / Constraint / Risk / Strategy]
-    IV[Decision Engine (IV)\nScoring / Optimization / Re-ranking]
-    III[Future Candidates (III)\nTrajectory / Action Space]
-    II[State / Trajectory (II)\nIR / Context / History]
-    I[Knowledge Model (I)\nY = f(X) / CCC]
+---
 
-    I --> II
-    II --> III
-    III --> IV
-    IV --> V
-
-    V --> IV
-    IV --> III
-    III --> II
-    II --> I
-
-    subgraph Control Flow
-        V --> IV
-        IV --> III
-        III --> II
-        II --> I
-    end
-
-    subgraph Generative Flow
-        I --> II
-        II --> III
-        III --> IV
-        IV --> V
-    end
-```
 
 ## 2. Diagram Interpretation（图解）
 🔷 双向结构（核心特征）
