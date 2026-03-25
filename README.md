@@ -1,6 +1,8 @@
 # 🧠 DBM Policy Decision System (PDS)
 ### A Fish-Control Paradigm for Intelligent Systems
 
+![DBM-SI-Canonical-Cover.png](assets/DBM-SI-Canonical-Cover.png)
+
 ---
 
 ## 🔥 One Sentence
