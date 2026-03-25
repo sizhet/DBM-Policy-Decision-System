@@ -3,6 +3,8 @@
 
 ![DBM-SI-Canonical-Cover.png](assets/DBM-SI-Canonical-Cover.png)
 
+**This project is part of the DBM-SI Structural Intelligence paradigm.**
+
 ---
 
 ## 🔥 One Sentence
