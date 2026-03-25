@@ -128,6 +128,11 @@ PDS is a **unifying control framework** that can incorporate:
 > AI is not about predicting the future —  
 > it is about deciding which future to realize.
 
+> **As AI systems take over implementation, human control shifts from writing logic to shaping policy.**
+
+> **Model produces possibilities.**\
+> **Policy decides reality.**
+
 ---
 
 ## 📄 Citation
