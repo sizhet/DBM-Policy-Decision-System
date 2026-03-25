@@ -48,7 +48,7 @@
     │       ├── structure-dynamics-control.png
     │       └── policy-field.png
     │
-    ├── runtime/
+    ├── src/
     │   ├── src/main/java/com/dbm/pds/
     │   ├── src/test/java/com/dbm/pds/
     │   └── README.md

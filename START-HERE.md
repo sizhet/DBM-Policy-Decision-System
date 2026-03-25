@@ -50,7 +50,7 @@ Goal:
 
 ## ⚙ Engineering Entry
 
-- runtime/ → Java skeleton
+- src/ → Java skeleton
 - examples/ → demos
 
 ---
