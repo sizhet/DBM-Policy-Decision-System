@@ -6,7 +6,9 @@ import com.dbm.pds.policy.PolicyEvaluation;
 import com.dbm.pds.policy.PolicyNote;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class WeightedPolicyAggregator implements PolicyAggregator {
 
@@ -18,15 +20,9 @@ public class WeightedPolicyAggregator implements PolicyAggregator {
 
     @Override
     public <Y> PolicyCandidate<Y> aggregate(Y candidate, PolicyEvaluation evaluation) {
-        double weightedAdjustment = 0.0;
+        double weightedAdjustment;
         List<PolicyNote> notes = new ArrayList<>(evaluation.getNotes());
 
-        for (PolicyNote note : notes) {
-            // 这里只对带 "(delta=" 的 notes 做解释增强；真正 delta 已在 evaluation 里累计。
-            // 最小版本采用 policyType 重新加权“总 adjustment”：
-        }
-
-        // 最小可运行版：对最终 adjustment 按 note types 平均加权
         double baseAdjustment = evaluation.getScoreAdjustment();
 
         if (!notes.isEmpty()) {
@@ -40,11 +36,18 @@ public class WeightedPolicyAggregator implements PolicyAggregator {
             weightedAdjustment = baseAdjustment;
         }
 
+        Map<String, Double> weightedBreakdown = new HashMap<>();
+        for (Map.Entry<String, Double> e : evaluation.getScoreBreakdown().entrySet()) {
+            double factor = weights.getWeight(e.getKey());
+            weightedBreakdown.put(e.getKey(), e.getValue() * factor);
+        }
+
         return new PolicyCandidate<>(
                 candidate,
                 evaluation.isAllowed(),
                 weightedAdjustment,
-                notes
+                notes,
+                weightedBreakdown
         );
     }
 }

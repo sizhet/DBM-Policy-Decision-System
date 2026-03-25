@@ -8,7 +8,8 @@ public class DefaultPolicyAggregator implements PolicyAggregator {
                 candidate,
                 evaluation.isAllowed(),
                 evaluation.getScoreAdjustment(),
-                evaluation.getNotes()
+                evaluation.getNotes(),
+                evaluation.getScoreBreakdown()
         );
     }
 }

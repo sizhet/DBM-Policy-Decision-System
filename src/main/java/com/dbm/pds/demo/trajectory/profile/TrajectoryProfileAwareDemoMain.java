@@ -74,5 +74,12 @@ public class TrajectoryProfileAwareDemoMain {
         System.out.println("## Evidence Trace");
         System.out.println(com.dbm.pds.evidence.EvidenceTraceMarkdownPrinter.print(result.getEvidenceTrace()));
         System.out.println();
+
+        System.out.println("## Score Breakdown Audit");
+        System.out.println(
+                com.dbm.pds.demo.trajectory.audit.TrajectoryScoreBreakdownMarkdownPrinter
+                        .print(result.getEvaluatedCandidates())
+        );
+        System.out.println();
     }
 }
