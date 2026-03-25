@@ -7,10 +7,11 @@
 
 我们正式定义：
 
-Axis	Paradigm	Function
-Structure	CCC	表达“是什么”
-Dynamics	Trajectory	表达“如何演化”
-Control	PDS	表达“如何选择”
+|Axis	|Paradigm	|Function
+|---|---|---|
+|Structure	|CCC	|表达“是什么”
+|Dynamics	|Trajectory	|表达“如何演化”
+|Control	|PDS	|表达“如何选择”
 
 ## 2. Unified Loop（统一闭环）
 
@@ -37,9 +38,9 @@ flowchart LR
 
 结构决定：
 
-状态空间
-相似性
-可达路径
+- 状态空间
+- 相似性
+- 可达路径
 
 👉 CCC 是“空间生成器”
 
@@ -47,9 +48,9 @@ flowchart LR
 
 轨迹提供：
 
-候选路径
-行为序列
-多未来分支
+- 候选路径
+- 行为序列
+- 多未来分支
 
 👉 Trajectory 是“未来生成器”
 
@@ -57,8 +58,8 @@ flowchart LR
 
 PDS 决定：
 
-哪条轨迹被采纳
-哪种行为被执行
+- 哪条轨迹被采纳
+- 哪种行为被执行
 
 👉 PDS 是“选择器”
 
@@ -66,34 +67,36 @@ PDS 决定：
 
 Policy 反向影响：
 
-CCC 权重
-结构偏好
-表达方式
+- CCC 权重
+- 结构偏好
+- 表达方式
 
 👉 Policy 是“结构塑形器”
 
 ## 4. Closed-Loop Intelligence（闭环智能）
-Structure → Dynamics → Decision → Policy → Structure
+
+    Structure → Dynamics → Decision → Policy → Structure
+
 🔥 核心结论
 
-Intelligence is a self-reinforcing structural loop.
+> **Intelligence is a self-reinforcing structural loop.**
 
 ## 5. Behavioral CCC Integration（Behavior CCC 融合）
 
 Behavior CCC 作用于：
 
-Trajectory pattern extraction
-Policy trigger detection
-Regime identification
+- Trajectory pattern extraction
+- Policy trigger detection
+- Regime identification
 
 🔥 升级表达
 
-CCC defines space
-Trajectory defines motion
-PDS defines selection
+> CCC defines space\
+> Trajectory defines motion\
+> PDS defines selection
 
-Behavior CCC defines pattern over motion
+> Behavior CCC defines pattern over motion
 
 ## 6. DBM-SI Unified Statement（统一声明）
 
-DBM-SI is a closed-loop system of structure, trajectory, and policy-controlled decision.
+> **DBM-SI is a closed-loop system of structure, trajectory, and policy-controlled decision.**
