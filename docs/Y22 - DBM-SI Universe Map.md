@@ -28,46 +28,46 @@ DYN[Trajectory Axis]
 DEC[Decision Axis]
 EVO[Evolution Axis]
 
-DBM → STRUCT
-DBM → DYN
-DBM → DEC
-DBM → EVO
+DBM-->STRUCT
+DBM-->DYN
+DBM-->DEC
+DBM-->EVO
 
 %% Structure
 IR[IR]
 CCC[CCC]
 STAR[6 Starmaps]
 
-STRUCT → IR
-STRUCT → CCC
-STRUCT → STAR
+STRUCT-->IR
+STRUCT-->CCC
+STRUCT-->STAR
 
 %% Trajectory
 TI[Trajectory Intelligence]
 STATE[State Transition]
 BCCC[Behavioral CCC]
 
-DYN → TI
-DYN → STATE
-DYN → BCCC
+DYN-->TI
+DYN-->STATE
+DYN-->BCCC
 
 %% Decision
 PDS[PDS]
 RULE[Rules]
 STRAT[Strategy]
 
-DEC → PDS
-DEC → RULE
-DEC → STRAT
+DEC-->PDS
+DEC-->RULE
+DEC-->STRAT
 
 %% Evolution
 APT[APCTGOE]
 GCCC[Growing CCC]
 META[Meta Operators]
 
-EVO → APT
-EVO → GCCC
-EVO → META
+EVO-->APT
+EVO-->GCCC
+EVO-->META
 
 %% Operator Space
 OPS[Operator Space]
@@ -76,18 +76,18 @@ LLM[LLM]
 RULEOP[Rules Engine]
 MATH[Math]
 
-OPS → CCCOP
-OPS → LLM
-OPS → RULEOP
-OPS → MATH
+OPS-->CCCOP
+OPS-->LLM
+OPS-->RULEOP
+OPS-->MATH
 
-STRUCT → OPS
-DYN → OPS
-DEC → OPS
-EVO → OPS
+STRUCT-->OPS
+DYN-->OPS
+DEC-->OPS
+EVO-->OPS
 
 %% Flow
-IR → CCC → TI → PDS → APT
+IR-->CCC-->TI-->PDS-->APT
 ```
 
 ---
