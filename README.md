@@ -139,14 +139,23 @@ PDS is a **unifying control framework** that can incorporate:
 
 ---
 
-## 📄 Citation
+## 🧾 Citation
 
-(待补充 CITATION.cff)
+DBM Policy Decision System (PDS)  
+Version: v1.0  
+Year: 2026  
 
----
+License: Apache
 
-## 🧭 License
+DOI: TBD
 
-Apache
+Repository: https://github.com/sizhet/DBM-Policy-Decision-System
 
+## DBM-SI Series of gitHub Repositories
+
+[DBM-SI-Repository-Series—Master-Narrative.md](DBM-SI-Repository-Series—Master-Narrative.md)
+
+## DBM-SI Core Concepts Summary by Numbers
+
+[DBM-SI-Core-Concepts-Summary-by-Numbers.md](DBM-SI-Core-Concepts-Summary-by-Numbers.md)
 
