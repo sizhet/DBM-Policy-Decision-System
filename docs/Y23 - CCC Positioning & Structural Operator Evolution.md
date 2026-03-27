@@ -1,4 +1,4 @@
-# Y20.2 — CCC Positioning & Structural Operator Evolution
+# Y23 — CCC Positioning & Structural Operator Evolution
 2026-03-25
 
 ---

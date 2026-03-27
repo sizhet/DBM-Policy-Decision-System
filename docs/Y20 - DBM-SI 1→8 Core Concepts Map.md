@@ -1,4 +1,4 @@
-# Y20.1 — DBM-SI 1→8 Core Concepts Map (Consensus Version)
+# Y20 — DBM-SI 1→8 Core Concepts Map (Consensus Version)
 2026-03-25
 
 ---

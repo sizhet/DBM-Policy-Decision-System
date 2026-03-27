@@ -1,4 +1,4 @@
-# Y21 — DBM-SI Multi-Repo Navigation Map
+# Y24 — DBM-SI Multi-Repo Navigation Map
 2026-03-25
 
 ---
@@ -84,7 +84,7 @@ not a collection of isolated algorithms.
 ## Entry Points
 
 - 🧭 Core Map: Y20 — 1→8 Concepts
-- 🧬 CCC Evolution: Y20.2
+- 🧬 CCC Evolution: Y23
 - ⚙️ Architecture: SIRA
 - 🚀 Applications: TRI / Messaging
 

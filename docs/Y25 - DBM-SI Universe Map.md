@@ -1,4 +1,4 @@
-# Y22 — DBM-SI Universe Map (Canonical Grand Map)
+# Y25 — DBM-SI Universe Map (Canonical Grand Map)
 2026-03-25
 
 ---
@@ -8,7 +8,7 @@
 The DBM-SI Universe Map unifies:
 
 - Core Concepts (Y20)
-- Multi-Repo Ecosystem (Y21)
+- Multi-Repo Ecosystem (Y24)
 - Operator Space
 - Structural Evolution
 
@@ -164,8 +164,8 @@ Defines how intelligence improves itself.
 ## Layer Integration
 
 - Y20 → defines conceptual hierarchy
-- Y21 → defines repository ecosystem
-- Y22 → defines system universe
+- Y24 → defines repository ecosystem
+- Y25 → defines system universe
 
 ---
 
