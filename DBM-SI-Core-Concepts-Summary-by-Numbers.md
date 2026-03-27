@@ -8,7 +8,7 @@
 
 ## Number 3: CCC + Trajectory + Policy Decision
 
-## Number 4: MET + APCTGOE + Viewer-Centered + Fish-Control    
+## Number 4: MET + APCTGOE Evolution + Observer-Centric IR + Autonomous AI (AAI)   
 
 ## Number 5: X + f(X) + Y + Decision + Policy
 
