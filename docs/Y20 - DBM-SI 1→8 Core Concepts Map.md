@@ -47,7 +47,7 @@ CCC + Trajectory + Policy Decision
 ## Level 4 — Principles & Mechanisms
 
 - MET (Minimal Evolution Threshold)
-- Viewer-Centered Perspective
+- Observer-Centeric Perspective
 - APCTGOE (Structure-aware evolution loop)
 - Control Strategies (e.g., Fish-Control)
 
