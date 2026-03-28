@@ -3,23 +3,22 @@
 
 （动态 PDS（DPDS）——演化与反馈系统）
 
-## 1. Static → Dynamic（静态到动态）
+## 1. Static → Dynamic
 
-原始 PDS：
+#### 原始 PDS：
 
     PDS = I × II × III × IV × V
 
-####升级为：
+#### Upgraded to：
     PDS(t) = evolving system over time
 
-## 2. DPDS Core Loop（核心循环）
+## 2. DPDS Core Loop
 
 ![Dynamic-PDS-(DPDS).png](../assets/Dynamic-PDS-(DPDS).png)
 
 ---
 
-
-## 3. Evolution Mechanism（演化机制）
+## 3. Evolution Mechanism
 
 DPDS integrates APTGOE:
 
@@ -33,7 +32,7 @@ DPDS integrates APTGOE:
 |Optimization	|improve decisions
 |Evolution	|update structure
 
-## 4. Memory as Structural Backbone（Memory 的作用）
+## 4. Memory as Structural Backbone）
 
 Memory stores:
 
@@ -42,31 +41,31 @@ Memory stores:
 - outcomes
 - failures
 
-#### 🔥 本质
+#### 🔥 Nature
 
 > Memory converts decisions into structure.
 
-## 5. Feedback Types（反馈类型）
+## 5. Feedback Types
 
-### 5.1 Short Loop（短反馈）
+### 5.1 Short Loop
 - immediate reward
 - decision tuning
 
-### 5.2 Long Loop（长反馈）
+### 5.2 Long Loop
 - policy adjustment
 - knowledge restructuring
 
-## 6. Convergence Behavior（收敛行为）
+## 6. Convergence Behavior
 
-DPDS 不一定收敛到单点：
+DPDS does not necessarily converge to a single point.
 
-可能收敛到：
+May converge to：
 
 - attractor
 - policy equilibrium
 - regime switching
 
-## 7. Final Insight（终极洞察）
+## 7. Final Insight
 
 > Static intelligence predicts. \
 > Dynamic intelligence evolves.

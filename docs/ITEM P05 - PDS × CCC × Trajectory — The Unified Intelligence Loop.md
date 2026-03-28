@@ -3,17 +3,17 @@
 
 （PDS × CCC × 轨迹智能——统一智能闭环）
 
-## 1. Three Fundamental Axes（三大基本轴）
+## 1. Three Fundamental Axes
 
-我们正式定义：
+We formally define：
 
 |Axis	|Paradigm	|Function
 |---|---|---|
-|Structure	|CCC	|表达“是什么”
-|Dynamics	|Trajectory	|表达“如何演化”
-|Control	|PDS	|表达“如何选择”
+|Structure	|CCC	|Expressing "What It Is"
+|Dynamics	|Trajectory	|Expressing "How It Evolves"
+|Control	|PDS	|Expressing "How to Choose"
 
-## 2. Unified Loop（统一闭环）
+## 2. Unified Loop
 
 ```mermaid
 flowchart LR
@@ -33,63 +33,63 @@ flowchart LR
     M --> CCC
 ```
 
-## 3. Functional Interpretation（功能解释）
+## 3. Functional Interpretation 
 ### 3.1 CCC → Trajectory
 
-结构决定：
+Structure determines:
 
-- 状态空间
-- 相似性
-- 可达路径
+- State space
+- Similarity
+- Reachable paths
 
-👉 CCC 是“空间生成器”
+👉 CCC is a "Space Generator."
 
 ### 3.2 Trajectory → PDS
 
-轨迹提供：
+Trajectories provide:
 
-- 候选路径
-- 行为序列
-- 多未来分支
+- Candidate paths
+- Behavioral sequences
+- Multiple future branches
 
-👉 Trajectory 是“未来生成器”
+👉 A Trajectory is a "Future Generator."
 
 ### 3.3 PDS → Policy
 
-PDS 决定：
+PDS determines:
 
-- 哪条轨迹被采纳
-- 哪种行为被执行
+- Which trajectory is adopted
+- Which behavior is executed
 
-👉 PDS 是“选择器”
+👉 PDS is a "selector."
 
 ### 3.4 Policy → CCC
 
-Policy 反向影响：
+Policy's Reverse Impact:
 
-- CCC 权重
-- 结构偏好
-- 表达方式
+- CCC Weighting
+- Structural Preferences
+- Modes of Expression
 
-👉 Policy 是“结构塑形器”
+👉 Policy acts as a "Structure Shaper."
 
-## 4. Closed-Loop Intelligence（闭环智能）
+## 4. Closed-Loop Intelligence
 
     Structure → Dynamics → Decision → Policy → Structure
 
-🔥 核心结论
+🔥 Key Conclusions
 
 > **Intelligence is a self-reinforcing structural loop.**
 
-## 5. Behavioral CCC Integration（Behavior CCC 融合）
+## 5. Behavioral CCC Integration
 
-Behavior CCC 作用于：
+Behavior CCC Act upon：
 
 - Trajectory pattern extraction
 - Policy trigger detection
 - Regime identification
 
-🔥 升级表达
+🔥 Elevated Expression
 
 > CCC defines space\
 > Trajectory defines motion\
@@ -97,6 +97,6 @@ Behavior CCC 作用于：
 
 > Behavior CCC defines pattern over motion
 
-## 6. DBM-SI Unified Statement（统一声明）
+## 6. DBM-SI Unified Statement）
 
 > **DBM-SI is a closed-loop system of structure, trajectory, and policy-controlled decision.**
