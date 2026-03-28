@@ -4,7 +4,7 @@
 
 （策略决策系统（PDS）——智能系统的鱼控范式）
 
-## 1. Abstract（摘要）
+## 1. Abstract
 
 Modern AI systems are predominantly framed as **prediction systems**: given input 
 X, estimate output 
@@ -33,7 +33,7 @@ This paradigm forms one of the three foundational axes of Structural Intelligenc
 
 > **Structure (CCC) × Dynamics (Trajectory) × Control (PDS)**
 
-## 2. Introduction（引言）
+## 2. Introduction
 
 Artificial Intelligence has historically evolved along the axis of **function approximation**:
 
@@ -56,7 +56,7 @@ This gap leads to a fundamental limitation:
 > Traditional AI predicts what could happen,\
 > but does not control what will happen.
 
-#### 🔥 Core Proposition（核心命题）
+#### 🔥 Core Proposition
 
 > **Intelligence is not prediction** — it is **controlled traversal over a future space**.
 
@@ -64,13 +64,11 @@ To address this, we introduce:
 
 > **Policy Decision System (PDS)**
 
-## 3. The Five Pillars of PDS（五大支柱）
+## 3. The Five Pillars of PDS
 
 PDS is composed of five orthogonal yet interacting components:
 
 ### I. Knowledge Model — Y=f(X)
-
-（知识模型：我是谁）
 
 Defines the system’s intrinsic capability to map inputs to outputs.
 
@@ -82,8 +80,6 @@ Examples:
 
 ### II. State / Input Trajectory — X
 
-（状态/输入轨迹：我从哪里来）
-
 Represents the current condition and historical context.
 
 Examples:
@@ -94,8 +90,6 @@ Examples:
 
 ### III. Future Candidates — Y-space
 
-（未来候选空间：我能去哪里）
-
 Defines the set of possible future outcomes or trajectories.
 
 Examples:
@@ -105,8 +99,6 @@ Examples:
 - trajectory proposals (DBM-SI)
 
 ### IV. Decision Engine
-
-（决策引擎：我如何选择）
 
 Evaluates and ranks candidates.
 
@@ -129,7 +121,7 @@ Examples:
 - governance rules
 - alignment constraints
 
-## 4. Fish-Control Structure（鱼控结构）
+## 4. Fish-Control Structure
 ### 4.1 Formal Definition
     
     PDS = I × II × III × IV × V
@@ -143,7 +135,7 @@ Where:
 
     Decision = Policy ∘ DecisionEngine ∘ CandidateSpace ∘ State ∘ Knowledge
 
-### 4.3 Interpretation（直观解释）
+### 4.3 Interpretation
 
 The Fish-Control Structure models intelligence as:
 
@@ -162,7 +154,7 @@ Analogy:
 
 The fish is not commanded — it is **guided by the structure of the field**.
 
-## 5. PDS as a Unifying Framework（统一框架）
+## 5. PDS as a Unifying Framework
 
 PDS generalizes multiple systems:
 
@@ -198,7 +190,7 @@ PDS generalizes multiple systems:
 
 - full structure + trajectory + policy control
 
-## 6. Policy as the Missing Dimension（Policy：缺失的一维）
+## 6. Policy as the Missing Dimension
 
 Most AI systems lack explicit Policy modeling.
 
@@ -211,7 +203,7 @@ Consequences:
 
 > **Policy is not optional — it is the defining dimension of controllable intelligence.**
 
-## 7. From Prediction to Control（从预测到控制）
+## 7. From Prediction to Control
 
 #### Traditional AI
 
@@ -225,7 +217,7 @@ Consequences:
 
 > **Prediction → Controlled Outcome Realization**
 
-## 8. Structural Intelligence Trinity（三位一体）
+## 8. Structural Intelligence Trinity
 
 PDS integrates with two other foundational paradigms:
 
@@ -239,7 +231,7 @@ PDS integrates with two other foundational paradigms:
 
     CCC → Trajectory → Decision → Policy → CCC (update)
 
-## 9. Human Role in the PDS Era（人类角色）
+## 9. Human Role in the PDS Era
 
 As AI systems take over implementation:
 
@@ -262,7 +254,7 @@ As AI systems take over implementation:
 > **Humans evolve from implementers of logic**\
 > **to designers and governors of decision systems**
 
-## 10. Conclusion（总结）
+## 10. Conclusion
 
 PDS establishes a new foundation for intelligence:
 

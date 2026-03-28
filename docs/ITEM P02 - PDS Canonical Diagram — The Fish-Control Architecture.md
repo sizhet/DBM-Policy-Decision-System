@@ -39,7 +39,8 @@ This structure corresponds to：
 - Fish (Behavior) move within the current (Policy).
 - and continuously adjust through the internal system (Decision).
 
-#### Relationship：
+#### Relations：
+
 |Layer	|Biological Analogy
 |---|---|
 |V Policy	|Flow / Potential Field
