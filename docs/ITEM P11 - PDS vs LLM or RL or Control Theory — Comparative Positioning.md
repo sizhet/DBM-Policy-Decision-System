@@ -3,23 +3,23 @@
 
 （PDS 与 LLM / 强化学习 / 控制理论的对标分析）
 
-## 1. Why Comparison Matters（为什么需要对标）
+## 1. Why Comparison Matters
 
-任何新范式要成立，都必须回答三个问题：
+For any new paradigm to be valid, it must answer three questions:
 
-- 它和已有主流方法是什么关系？
-- 它解决了什么已有方法难以统一表达的问题？
-- 它是替代、补充，还是上位框架？
+- What is its relationship to existing mainstream approaches?
+- What problems—which existing methods struggle to express coherently—does it resolve?
+- Does it serve as a replacement, a supplement, or a higher-level framework?
 
-PDS 的答案是：
+PDS’s answer is:
 
 > **PDS is not a narrow replacement for any one method.**\
 > **It is a higher-order decision framework that can host, reinterpret, and coordinate multiple existing paradigms.**
 
-## 2. PDS vs LLM（与大语言模型的关系）
+## 2. PDS vs LLM
 ### 2.1 LLM 的典型结构
 
-LLM 通常可被理解为：
+LLMs can generally be understood as:
 
     Input Context
        ↓
@@ -27,61 +27,62 @@ LLM 通常可被理解为：
        ↓
     Next-token Selection
 
-从 PDS 视角看，它大体对应：
+From a PDS perspective, it broadly corresponds to：
 
     PDS = I × II × III × IV
 
-其中：
+Where：
 
-- I = 语言知识模型 Y=f(X)
-- II = 当前上下文 / 历史 token 轨迹
-- III = 候选 token / candidate continuations
-- IV = 采样 / beam search / reranking
-- V = 通常很弱、隐式、外置或缺席
+- I = Language Knowledge Model: Y = f(X)
+- II = Current Context / Historical Token Trajectory
+- III = Candidate Tokens / Candidate Continuations
+- IV = Sampling / Beam Search / Reranking
+- V = Typically Weak, Implicit, External, or Absent
 
-### 2.2 LLM 的优势
-- 表示能力强
-- 大规模统计知识丰富
-- 候选生成能力极强
-- 在开放语义空间中非常灵活
+### 2.2 Advantages of LLMs
+- Strong representational capabilities
+- Rich in large-scale statistical knowledge
+- Extremely powerful candidate generation capabilities
+- Highly flexible within open semantic spaces
 
-### 2.3 LLM 的局限（PDS 视角）
+### 2.3 Limitations of LLMs (from a PDS Perspective)
 
-LLM 的核心问题不是不会生成，而是：
+The core issue with LLMs is not a lack of generation capability, but rather:
 
-> **缺少显式、稳定、可组合的 Policy 层**
+> **The absence of an explicit, stable, and composable Policy layer**
 
-表现为：
+This manifests as:
 
-- 目标不清晰或漂移
-- 难以进行强约束决策
-- 决策理由不稳定
-- 缺少长期一致的 policy governance
+- Unclear or drifting objectives
+- Difficulty in making strongly constrained decisions
+- Inconsistent decision-making rationales
+- A lack of long-term, consistent policy governance
 
-### 2.4 PDS 对 LLM 的上位解释
+### 2.4 PDS as a Higher-Level Explanation for LLMs
 
-PDS 不否定 LLM，而是给出更完整的解释：
+PDS does not negate the value of LLMs; instead, it offers a more comprehensive explanation:
 
-- LLM 可作为 I（Knowledge）
-- LLM 的上下文窗口可作为 II
-- token / plan / tool candidates 可作为 III
-- reranking / verifier / judge 可作为 IV
-- 真正缺的是显式 V（Policy）
+- LLMs can serve as I (Knowledge)
+- The LLM's context window can serve as II
+- Token, plan, or tool candidates can serve as III
+- Rerankers, verifiers, or judges can serve as IV
+- What is truly missing is an explicit V (Policy)
 
-🔥 关键结论
+🔥 Key Conclusion
 
 > **LLM is a powerful generative component inside PDS, but not a complete decision architecture by itself.**
 
-## 3. PDS vs Reinforcement Learning（与强化学习的关系）
-### 3.1 RL 的典型结构
+## 3. PDS vs Reinforcement Learning
 
-RL 的核心是：
+### 3.1 Typical Structure of RL
+
+The core of RL consists of:
 
     State → Action → Reward → Policy Update
 
-这与 PDS 非常接近，因此 RL 是最容易与 PDS 对接的传统范式之一。
+This closely resembles PDS; consequently, RL is one of the traditional paradigms most easily integrated with PDS.
 
-### 3.2 PDS 视角下的 RL 映射
+### 3.2 Mapping of RL from a PDS Perspective
 
 |RL Element	|PDS Element
 |---|---|
@@ -91,46 +92,48 @@ RL 的核心是：
 |Reward	|Policy learning signal
 |Value / Q-function	|I / IV hybrid
 
-### 3.3 RL 的优势
-- 擅长 sequential decision
-- 擅长 reward-driven adaptation
-- 强于 closed-loop optimization
+### 3.3 Advantages of RL
+- Excels at sequential decision-making
+- Excels at reward-driven adaptation
+- Stronger in closed-loop optimization
 
-### 3.4 RL 的局限（PDS 视角）
+### 3.4 Limitations of RL
 
-RL 常见局限：
+Common limitations of RL:
 
-- policy 往往被压缩为参数，而不是结构化政策系统
-- 候选空间表达较弱
-- 对 long-horizon semantics / rich structural representation 支持有限
-- 很难统一纳入 CCC / trajectory semantics / multi-layer governance
+- Policies are often compressed into parameters rather than being structured policy systems
+- Weak representation of the candidate space
+- Limited support for long-horizon semantics and rich structural representations
+- Difficult to seamlessly integrate CCC, trajectory semantics, and multi-layer governance
 
-### 3.5 PDS 相比 RL 的扩展
+### 3.5 Extensions of PDS Compared to RL
 
-PDS 更强调：
+PDS places greater emphasis on:
 
-- Policy 的显式分解（Goal / Constraint / Risk / Strategy）
-- Candidate space 的结构化表达
-- 与 CCC / Behavior CCC 的耦合
-- 将 policy 视为“控制场”而非单纯参数函数
+- Explicit decomposition of policies (Goals, Constraints, Risks, Strategies)
+- Structured representation of the candidate space
+- Coupling with CCC and Behavioral CCC
+- Viewing the policy as a "control field" rather than merely a parametric function
 
-🔥 关键结论
+🔥 Key Takeaways
 
 > **RL is one important instance of dynamic decision learning inside the broader PDS framework.**
 
-## 4. PDS vs Classical Control Theory（与经典控制理论的关系）
+## 4. PDS vs Classical Control Theory
 ### 4.1 控制理论的典型形式
 
-经典控制理论通常关注：
+### 4.1 Typical Forms of Control Theory
 
-- 被控对象
-- 控制输入
-- 系统状态
-- 稳定性
-- 跟踪误差
-- 反馈回路
+Classical control theory typically focuses on:
 
-典型形式：
+- The controlled object
+- Control inputs
+- System states
+- Stability
+- Tracking error
+- Feedback loops
+
+Typical forms:
 
     State x(t)
        ↓
@@ -140,39 +143,39 @@ PDS 更强调：
        ↓
     Feedback
 
-### 4.2 与 PDS 的共通点
+### 4.2 Commonalities with PDS
 
-PDS 与控制理论共享几个关键基因：
+PDS shares several key characteristics with Control Theory:
 
-- 都强调 feedback
-- 都强调 policy / controller 的作用
-- 都强调目标与约束
-- 都关注 system behavior 而不是单点输出
+- Both emphasize feedback.
+- Both emphasize the role of policies or controllers.
+- Both emphasize objectives and constraints.
+- Both focus on system behavior rather than isolated outputs.
 
-### 4.3 差异所在
+### 4.3 Key Differences
 
-控制理论常聚焦于：
+Control Theory typically focuses on:
 
-- 连续系统
-- 低维状态空间
-- 可解析动力学
-- 稳定性与误差控制
+- Continuous systems.
+- Low-dimensional state spaces.
+- Analytically tractable dynamics.
+- Stability and error control.
 
-PDS 则面向：
+PDS, conversely, addresses:
 
-- 高维语义空间
-- 离散 / 连续混合候选空间
-- 多层 policy 与复杂目标
-- 结构、轨迹、决策一体化
+- High-dimensional semantic spaces.
+- Hybrid discrete-continuous candidate spaces.
+- Multi-layered policies and complex objectives.
+- The integration of structure, trajectory, and decision-making.
 
-### 4.4 PDS 的上位性
+### 4.4 The Higher-Level Nature of PDS
 
-可以这样理解：
+This can be understood as follows:
 
 > **Classical control theory controls trajectories in physical state space.**\
 > **PDS generalizes control into semantic, structural, and decision spaces.**
 
-## 5. Comparative Summary（综合对比）
+## 5. Comparative Summary
 
 |Aspect	|LLM	|RL	|Control Theory	|PDS
 |---|---|---|---|---|
@@ -183,10 +186,6 @@ PDS 则面向：
 |CCC / structural integration	|weak	|weak-medium	|weak	|native
 |Domain scope	|language-heavy	|sequential tasks	|engineered systems	|general intelligence systems
 
-## 6. Final Positioning Statement（最终定位）
+## 6. Final Positioning Statement
 
 > **PDS is best understood not as a competitor to LLM, RL, or control theory, but as a unifying control-centric framework that can incorporate all three.**
-
-中文：
-
-> **PDS 不是简单与 LLM、RL、控制理论竞争，而是一个以上位“决策控制”视角，将三者重新统一起来的框架。**

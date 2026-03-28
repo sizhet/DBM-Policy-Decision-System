@@ -3,99 +3,95 @@
 
 （PDS 的基准测试与评估）
 
-## 1. Why Benchmarking Matters（为什么必须设计评测）
+## 1. Why Benchmarking Matters
 
-若没有评测，PDS 会沦为概念。
-若只有单一准确率评测，PDS 的优势又无法体现。
+Without evaluation, PDS would be reduced to a mere concept.
+Conversely, if evaluation were limited solely to predictive accuracy, the true strengths of PDS would fail to be demonstrated.
 
-因为 PDS 不是单纯预测系统，它需要同时验证：
+This is because PDS is not merely a predictive system; it requires simultaneous validation across the following dimensions:
 
-- 候选生成能力
-- 决策能力
-- Policy 控制能力
-- 长期稳定性
-- 演化能力
+- Candidate Generation Capability
+- Decision-Making Capability
+- Policy Control Capability
+- Long-Term Stability
+- Evolutionary Capability
 
-## 2. Five Benchmark Dimensions（五大评测维度）
-### 2.1 Representation Quality（表征质量）
+## 2. Five Benchmark Dimensions
+### 2.1 Representation Quality
 
-问的是：
+The fundamental question here is:
 
-> **系统是否正确构造了有用的 state / knowledge / CCC 表达**
+> **Has the system correctly constructed useful representations of state, knowledge, and/or CCC?**
 
-可测指标：
+Measurable Indicators:
 
 - state fidelity
 - CCC coherence
 - representation stability
 - retrieval / matching quality
 
-### 2.2 Candidate Quality（候选质量）
+### 2.2 Candidate Quality
 
-问的是：
+The question is:
 
-> 系统生成的 future candidates 是否足够好、足够多样、足够覆盖？
+> Are the system-generated "future candidates" sufficiently good, diverse, and comprehensive?
 
-可测指标：
+Measurable Metrics：
 
 - candidate recall
 - diversity
 - feasibility rate
 - top-k future coverage
 
-### 2.3 Decision Quality（决策质量）
+### 2.3 Decision Quality
 
-问的是：
+The question is:
 
-> 在已有候选中，系统能否选到高质量决策？
+> Can the system select a high-quality decision from the existing set of candidates?
 
-可测指标：
+Measurable metrics:
 
 - top-1 success rate
 - regret
 - ranking quality
 - cost / utility achieved
 
-### 2.4 Policy Effectiveness（策略有效性）
+### 2.4 Policy Effectiveness
 
-问的是：
+The question is:
 
-> policy 是否真的改变了结果，并朝目标方向塑形了候选空间与决策行为？
+> Did the policy truly alter the outcome, and did it shape the candidate space and decision-making behaviors in the direction of the intended goal?
 
-可测指标：
+Measurable Indicators:
 
 - constraint satisfaction rate
 - risk violation rate
 - goal alignment score
 - policy-conditioned outcome shift
 
-### 2.5 Dynamic Adaptation（动态适应）
+### 2.5 Dynamic Adaptation
 
-问的是：
+The questions are:
 
-> 系统是否会随着反馈改善？是否能在 regime shift 下维持性能？
+> Will the system improve in response to feedback? Can it maintain its performance amidst regime shifts?
 
-可测指标：
+Measurable metrics:
 
 - adaptation speed
 - robustness under shift
 - policy convergence / stability
 - recovery after failure
 
-## 3. Core Evaluation Principle（核心评测原则）
+## 3. Core Evaluation Principle
 
 > **Do not evaluate PDS only by final outcome accuracy.**\
 > **Evaluate each pillar and the coupling between pillars.**
 
-中文：
+## 4. Benchmark Levels
 
-> **不能只看最终对错，必须分别评估五支柱及其耦合质量。**
+### Level 1 — Component Benchmarks
 
-## 4. Benchmark Levels（评测层级）
-
-### Level 1 — Component Benchmarks（组件级）
-
-单测每一层：
+Unit testing at each layer:
 
 - Knowledge model quality
 - State construction
@@ -103,52 +99,52 @@
 - Decision ranking
 - Policy filtering
 
-适合工程开发与 ablation。
+Suitable for engineering development and ablation studies.
 
-### Level 2 — System Benchmarks（系统级）
+### Level 2 — System Benchmarks
 
-评估整条链路：
+Evaluating the entire pipeline:
 
     Input → State → Candidates → Policy → Decision → Outcome
 
-关注：
+Focus areas:
 
-- 端到端 performance
-- trace quality
-- evidence consistency
+- End-to-end performance
+- Trace quality
+- Evidence consistency
 
-### Level 3 — Dynamic Benchmarks（动态级）
+### Level 3 — Dynamic Benchmarks
 
-多轮决策环境中测试：
+Testing within a multi-round decision-making environment:
 
 - adaptation
 - memory usage
 - long-horizon consistency
 - regime switching
 
-### Level 4 — Multi-Agent Benchmarks（群体级）
+### Level 4 — Multi-Agent Benchmarks
 
-适用于：
+Applicable to:
 
-- 车群
-- 市场 agent
-- coding agent swarm
+- Vehicle Swarms
+- Market Agents
+- Coding Agent Swarms
 
-评估：
+Evaluation:
 
 - coordination quality
 - conflict resolution
 - collective utility
 - emergent stability
 
-## 5. Benchmark Templates（建议基准模板）
+## 5. Benchmark Templates
 ### 5.1 Finance Template
 
-任务：
+ask:
 
-- 给定市场轨迹与风险条件，生成交易候选并决策
+- Given market trajectories and risk conditions, generate trading candidates and make decisions.
 
-指标：
+Metrics:
 
 - return
 - drawdown
@@ -157,11 +153,11 @@
 
 ### 5.2 Autonomous Driving Template
 
-任务：
+Task:
 
-- 给定道路状态，生成轨迹并在 policy 下选择
+- Given the road state, generate trajectories and select one based on the policy.
 
-指标：
+Metrics:
 
 - safety violations
 - comfort / smoothness
@@ -170,20 +166,20 @@
 
 ### 5.3 AI Coding Template
 
-任务：
+Task:
 
-- 给定代码库与 bug，生成 patch candidates 并选最优
+- Given a codebase and a bug, generate patch candidates and select the optimal one.
 
-指标：
+Metrics:
 
 - compile success
 - test pass rate
 - policy compliance
 - regression count
 
-## 6. Suggested PDS-Specific Metrics（PDS 特有指标）
+## 6. Suggested PDS-Specific Metrics
 
-这里我建议你正式提出一组 **PDS-native metrics**。
+Here, we formally propose a set of **PDS-native metrics**.
 
 ### 6.1 Candidate Coverage Ratio (CCR)
 
@@ -195,7 +191,7 @@ CCR=useful candidates generatedall relevant candidates
             useful candidates generated
 
 
-衡量 III 的覆盖能力。
+Measure the coverage capability of III.
 
 ### 6.2 Policy Constraint Satisfaction (PCS)
 
@@ -203,61 +199,56 @@ CCR=useful candidates generatedall relevant candidates
     PCS = ----------------------------------
                 all decisions
 
-衡量 V 的约束有效性。
+Measure the validity of V's constraints.
 
 ### 6.3 Decision Gain over Raw Prediction (DGRP)
 
     DGRP=Utility(PDS decision)−Utility(raw prediction baseline)
 
 
-衡量“从预测到决策”的增益。
+Measure the gain "from prediction to decision."
 
 ### 6.4 Adaptive Recovery Time (ART)
 
-在环境变化或失败后，系统恢复到目标性能区间所需轮数。
+The number of rounds required for the system to recover to the target performance range following an environmental change or failure.
 
 ### 6.5 Policy Influence Index (PII)
 
-衡量 policy 对候选空间与最终选择的影响程度。
+Measure the extent of the policy's influence on the candidate space and the final selection.
 
-例如可以定义为：
+For example, it can be defined as:
 
     PII = 1 − (∣Cπ(s)∣ / ∣C(s)∣)
 
+Alternatively, use outcome distribution shift to define a richer version.
 
-或使用 outcome distribution shift 来定义更丰富版本。
+## 7. Ablation Strategy
 
-## 7. Ablation Strategy（消融实验建议）
+PDS is particularly well-suited for structured ablation studies:
 
-PDS 特别适合做结构化 ablation：
+- Remove the Policy (V)
+- Remove the Candidate Generator (III)
+- Fix the Policy (disable learning)
+- Remove the Memory module
+- Remove the CCC / trajectory signal
 
-- 去掉 Policy（V）
-- 去掉 Candidate Generator（III）
-- 固定 Policy 不学习
-- 去掉 Memory
-- 去掉 CCC / trajectory signal
+Then, compare:
 
-然后比较：
+- Changes in performance
+- Changes in stability
+- Changes in risk levels
+- Changes in long-term adaptability
 
-- 性能变化
-- 稳定性变化
-- 风险变化
-- 长期适应变化
+## 8. What Success Looks Like
 
-## 8. What Success Looks Like（成功验证的标志）
+For a PDS to be considered "validated," it must demonstrate more than just superior final results; it should also exhibit:
 
-一个 PDS 若要被认为“成立”，不只是最终结果更好，而应体现：
+1. A richer candidate space
+2. More robust decision-making
+3. Stronger constraint satisfaction
+4. Faster recovery following regime shifts
+5. Continuous improvement driven by policy learning
 
-1. 候选空间更丰富
-2. 决策更稳健
-3. 约束满足更强
-4. regime shift 下恢复更快
-5. policy learning 带来持续改进
-
-## 9. Final Evaluation Statement（最终评测陈述）
+## 9. Final Evaluation Statement
 
 > **A valid benchmark for PDS must evaluate not only whether the final answer is correct, but whether the system constructs, filters, selects, and adapts over future space in a policy-governed manner.**
-
-中文：
-
-> **PDS 的有效评测，不只是看最终答案是否正确，而是看系统是否在策略约束下，正确构造、过滤、选择并适应未来空间。**

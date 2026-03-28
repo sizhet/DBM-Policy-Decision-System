@@ -16,7 +16,7 @@ Therefore, a **minimal mathematical skeleton** is required.
 
 ## 2. Basic Objects
 
-我们定义：
+We define：
 
 ![Section-2.png](../assets/math-figs/Section-2.png)
 
