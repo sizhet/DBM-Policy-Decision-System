@@ -18,12 +18,12 @@
 #### Flow
     Market → Trajectory → Candidate Trades → Risk Evaluation → Policy Filtering → Execution
 
-#### 🔥 价值
-- 动态风险控制
-- regime detection
-- contagion modeling
+#### 🔥 Value
+- Dynamic Risk Control
+- Regime Detection
+- Contagion Modeling
 
-## 2. Autonomous Driving（自动驾驶）
+## 2. Autonomous Driving
 
 #### Mapping
 
@@ -35,12 +35,12 @@
 |IV	|safety scoring
 |V	|driving policy
 
-#### 🔥 特点
-- 多轨迹选择
-- 风险约束优先
-- 实时决策
+#### 🔥 Features
+- Multi-trajectory selection
+- Risk constraints prioritized
+- Real-time decision-making
 
-#### 🔥 本质
+#### 🔥 Essence
 
 > Not “predict next move” \
 > but “choose safest trajectory under policy”
@@ -59,18 +59,18 @@
 #### Flow
     Problem → Candidate Solutions → Compile/Test → Policy Check → Best Patch
 
-#### 🔥 价值
-- 自动修复
-- 多方案比较
-- 安全约束
+#### 🔥 Value
+- Automated Repair
+- Multi-Solution Comparison
+- Security Constraints
 
-## 4. General Pattern（统一模式）
+## 4. General Pattern
 
-所有行业都遵循：
+All industries follow this pattern:
 
     State → Candidate → Decision → Policy → Action
 
-## 5. Final Insight（终极洞察）
+## 5. Final Insight）
 
 > PDS is not domain-specific — \
 > it is a universal decision architecture.

@@ -3,13 +3,13 @@
 
 （最小 PDS 运行时——Java骨架与插件架构）
 
-## 1. Design Principles（设计原则）
-- 插件化（Plug-in first）
-- 可替换（Replaceable modules）
-- 可观测（Trace / Evidence）
-- 与 DBM runtime 对齐
+## 1. Design Principles
+- Plug-in first
+- Replaceable module）
+- Trace / Evidence
+- Aligned with the DBM runtime
 
-## 2. Core Interface（核心接口）
+## 2. Core Interface
 
     package com.dbm.pds.api;
     
@@ -22,7 +22,7 @@
     
     }
 
-## 3. Runtime Context（统一上下文）
+## 3. Runtime Context
     
     package com.dbm.pds.api;
     
@@ -44,7 +44,7 @@
     
     }
 
-## 4. Five Pillars Interfaces（五大模块接口）
+## 4. Five Pillars Interfaces
 ### 4.1 Knowledge Model (I)
 
     public interface KnowledgeModel<X, Y> {
@@ -91,7 +91,7 @@
     
     }
 
-## 5. Default Orchestrator（核心编排器）
+## 5. Default Orchestrator
     
     package com.dbm.pds.core;
     
@@ -134,7 +134,7 @@
         }
     }
 
-## 6. Decision Result（输出结构）
+## 6. Decision Result
     
     package com.dbm.pds.api;
     
@@ -159,15 +159,15 @@
         }
     }
 
-## 7. Extension Hooks（扩展点）
+## 7. Extension Hooks
 
-建议后续加入：
+Suggested for future inclusion：
 
 - EvidenceChainRecorder
-P- olicyAudit
+- PolicyAudit
 - TrajectoryTrace
 - MemoryRegistry
 
-🔥 核心设计理念
+🔥 Core Design Philosophy
 
 > **Everything is replaceable — PDS is a structure, not an algorithm.**
