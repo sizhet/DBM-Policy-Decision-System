@@ -3,82 +3,81 @@
 
 （多智能体 PDS——群体决策系统）
 
-## 1. Motivation（动机）
+## 1. Motivation
 
-现实系统不是单一 agent：
+Real-world systems are not single agents:
 
-- 市场
-- 自动驾驶车群
+- Markets
+- Fleets of autonomous vehicles
 - AI coding agents
 
-👉 需要：
+👉 Require:
 
 > **Multi-Agent PDS (MAPDS)**
 
-## 2. Architecture（架构）
+## 2. Architecture
 
 ![Multi-Agent-PDS—Collective-Decision-Systems.png](../assets/Multi-Agent-PDS—Collective-Decision-Systems.png)
 
 ---
 
-## 3. Key Components（关键组成）
+## 3. Key Components
 ### 3.1 Individual PDS
 
-每个 agent：
+Each agent：
 
     I × II × III × IV × V
 
 ### 3.2 Shared Environment
-- 状态共享
-- trajectory 交互
+- State Sharing
+- Trajectory Interaction
 
-### 3.3 Global Policy（关键）
-- 协调
-- 冲突解决
-- 资源分配
+### 3.3 Global Policy
+- Coordination
+- Conflict Resolution
+- Resource Allocation
 
-## 4. Interaction Modes（交互模式）
+## 4. Interaction Modes
 
-#### 🔷 Cooperative（协作）
-- 共享目标
-- 集体优化
+#### 🔷 Cooperative
+- Shared Objectives
+- Collective Optimization
 
-#### 🔷 Competitive（竞争）
-- 对抗策略
-- 博弈
+#### 🔷 Competitive
+- Adversarial Strategies
+- Game Theory
 
-#### 🔷 Hybrid（混合）
-- 局部竞争 + 全局协作
+#### 🔷 Hybrid
+- Local Competition + Global Cooperation
 
-## 5. Emergent Behavior（涌现行为）
-
-多 PDS 系统会出现：
+## 5. Emergent Behavior
+Multi-PDS systems exhibit:
 
 - market dynamics
 - traffic patterns
 - swarm intelligence
 
-🔥 本质
+🔥 Essence
 
 > Collective intelligence emerges from interacting policy-controlled agents.
 
-## 6. Conflict Resolution（冲突解决）
+## 6. Conflict Resolution
 
-通过：
+Achieved via:
 
 - policy hierarchy
 - negotiation
 - voting / scoring
 
-## 7. DBM-SI Context（在 DBM-SI 中）
+## 7. DBM-SI Context
 
-可扩展为：
+Extensible to:
 
-- 多 trajectory intelligence 交互
-- CCC 对齐与冲突
-- policy 传播
+- interactions among multiple trajectory intelligence entities
+- CCC alignment and conflict resolution
+- policy propagation
 
-## 8. Final Insight（终极洞察）
+## 8. Final Insight
 
 > Single-agent intelligence selects actions. \
 > Multi-agent intelligence shapes worlds.

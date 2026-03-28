@@ -3,14 +3,14 @@
 
 （PDS 中的策略学习与自适应）
 
-## 1. Why Policy Must Learn（为什么 Policy 必须学习）
+## 1. Why Policy Must Learn
 
-静态 Policy：
+Static Policy:
 
-- 无法适应环境变化
-- 无法处理 regime shift
+- Unable to adapt to environmental changes
+- Unable to handle regime shifts
 
-👉 必须升级为：
+👉 Must be upgraded to:
 
 > Adaptive Policy System
 
@@ -32,9 +32,9 @@ flowchart LR
     P --> D
 ```
 
-## 3. Learning Signals（学习信号）
+## 3. Learning Signals
 
-Policy 更新来源：
+Policy Update Source：
 
 ### 3.1 Outcome-based
 - reward
@@ -55,7 +55,7 @@ Policy 更新来源：
 - behavioral similarity
 - CCC coherence
 
-## 4. Policy Parameterization（策略参数化）
+## 4. Policy Parameterization
 
     Policy = f(
         goals,
@@ -64,9 +64,9 @@ Policy 更新来源：
         strategy weights
     )
 
-## 5. APTGOE Integration（演化接入）
+## 5. APTGOE Integration
 
-#### Policy 演化：
+#### Policy Evolution：
 
 |Stage	|Policy Role
 |---|---|
@@ -76,22 +76,22 @@ Policy 更新来源：
 |Optimization	|select best policy
 |Evolution	|retain / discard
 
-#### 🔥 核心表达
+#### 🔥 Core Concept
 
 > Policy is not fixed — it is an evolving structure.
 
-## 6. Multi-Level Adaptation（多层自适应）
+## 6. Multi-Level Adaptation
 
-#### Level 1：Decision-level
-- 调整评分函数
+#### Level 1: Decision-level
+- Adjust the scoring function
 
-#### Level 2：Policy-level
-- 调整目标 / 风险
+#### Level 2: Policy-level
+- Adjust objectives / risk parameters
 
-#### Level 3：Structure-level
-- 改变 CCC / 表达
+#### Level 3: Structure-level
+- Modify the CCC / representation
 
-## 7. Final Insight（终极洞察）
+## 7. Final Insight
 
 > Learning is not just improving decisions — \
 > it is evolving the policy that governs decisions.
