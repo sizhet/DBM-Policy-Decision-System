@@ -1,250 +1,184 @@
-# ITEM P20
-# The Dartboard Model of Intelligence
-### CCC Hierarchy, Triggering Necessity, and the Geometry of Structural Intelligence
-
-## 0. Executive Insight
-
-Intelligence is not about reaching predefined targets —
-it is about activating valid structures in a policy-shaped future space.
-
-## 1. Motivation
-
-Most existing AI paradigms define intelligence as:
-
-optimization over fixed representations
-search within predefined spaces
-minimizing distance to known targets
+# ITEM P20 
+# Structural Intelligence via CCC Triggering
+### From Dartboard Model to Metric-Space Decision Systems
 
-This implicitly assumes:
+## Abstract
 
-targets are explicitly defined
-space is geometrically stable
-objectives are known in advance
-Limitation
+We introduce a structural decision paradigm in which decision-making is decomposed into two phases: (1) structural triggering and (2) preference-based scoring. We formalize the notion of Common Concept Core (CCC) as a metric-space structural operator that defines admissible candidate regions prior to evaluation. This leads to a Policy Decision System (PDS) formulation in which policy reshapes the feasible decision space before optimization occurs. We demonstrate that projection-based approaches fail to preserve triggering signals, establishing CCC triggering as a geometric necessity in metric spaces. A minimal executable runtime is provided, along with a structured experimental system including policy comparison, threshold sweep, and combined grid analysis. Results show that decision outcomes emerge from the interaction between structural admissibility and policy preference rather than scoring alone.
 
-In real-world systems:
+## 1. Introduction
 
-targets are often unknown or implicit
-structure is relational and dynamic
-meaningful outcomes are not coordinate-defined
+Most modern AI systems adopt a pipeline:
 
-## 2. The Dartboard Model
+Generate → Score → Select
 
-We define intelligence through the Dartboard Model:
+This implicitly assumes that all candidates are valid prior to scoring.
+However, in high-dimensional or structured domains, this assumption fails.
 
-Ys
-Y
-s
-	​
+We propose a structural paradigm:
 
-: future space (structured dartboard)
-y∈Ys
-y∈Y
-s
-	​
+> Decision should first determine **what is valid**, then determine **what is best**.
 
-: candidate outcomes
-CCC: darts (structure-generating signals)
-Policy 
-π
-π: throwing mechanism
-Dispatch: projection into future space
-Formal Definition
-Dispatch:(s,CCC,π)→C(s)⊆Ys
-Dispatch:(s,CCC,π)→C(s)⊆Y
-s
-	​
+This leads to a two-phase architecture:
 
-Core Insight
+- Phase-1: structural triggering
+- Phase-2: scoring and selection
 
-Intelligence is not search — it is structured projection.
+## 2. Dartboard Model of Intelligence
 
-## 3. CCC — The Fundamental Unit
-CCC:(s,y)→Rk
-CCC:(s,y)→R
-k
-Conceptual Definition
+We reinterpret decision-making as a targeting problem.
 
-CCC is a structure-generating operator that produces directional signals over future space.
+### Traditional View
+- target: coordinate
+- hit: proximity
 
-## 4. CCC Hierarchy
+### Structural View (P20)
+- target: structural region
+- hit: CCC activation
 
-We define four levels:
+Formally:
 
-Level 1 — Primitive CCC
-Ax=b
-Ax=b (constraint CCC)
-cTx
-c
-T
-x (direction CCC)
-distance / similarity metrics
-Level 2 — Composite CCC
-optimization systems
-graph / differential structures
-Level 3 — Adaptive CCC
-attention (Q/K/V)
-learned embeddings
-Level 4 — Paradigm CCC
-Two-Ways CCC
-Behavioral CCC
-DBM structural CCC
-Key Principle
+Hit = Trigger(structure)
 
-Intelligence power depends on CCC abstraction level, not just optimization.
+This shifts decision from coordinate space to **metric structural space**.
 
-## 5. CCC Across Disciplines (Unification)
-Linear Algebra
-Ax=b
-Ax=b
+## 3. Common Concept Core (CCC)
 
-→ constraint shaping
+CCC is defined as:
 
-Optimization
-min⁡cTx    s.t.  Ax=b
-minc
-T
-xs.t.Ax=b
+- a structural invariant in metric space
+- extracted prior to projection
+- used for triggering candidate validity
 
-→ direction + feasibility
+### 3.1 Necessity of CCC
 
-Deep Learning
-Attn(Q,K,V)
-Attn(Q,K,V)
+Without CCC:
 
-→ dynamic CCC generation
+- projection reduces dimensionality
+- signal is averaged out
+- triggering becomes heuristic
 
-DBM-SI
+With CCC:
 
-→ structural CCC systems
+- structure is preserved
+- triggering becomes geometric
 
-Unified Statement
+## 4. Metric vs Projection Theorem
+### Statement
 
-All intelligent systems implicitly rely on CCC-like operators —
-but true intelligence emerges when CCC becomes a paradigm.
+Projection-based representations cannot preserve structural triggering signals in general metric spaces.
 
-## 6. Dispatch — Structured Projection
-Dispatch:(s,CCC)→C(s)
-Dispatch:(s,CCC)→C(s)
-DBM Interpretation
-Differential Tree = structured space
-Policy = routing bias
-Insight
+### Implication
 
-Dispatch projects structure, not enumerates options.
+> CCC-based triggering is not optional — it is necessary.
 
-## 7. CCC Triggering Principle
+## 5. Two-Phase Architecture
+- Phase-1: Trigger (validity)
+- Phase-2: Score (optimality)
 
-We redefine “hit”:
+### 5.1 Formalization
+    y^* = \arg\max_{y \in C_\pi(s)} score(y \mid s, \pi)
 
-HitCCC=1(CCC(s,y)≥θ)
-Hit
-CCC
-	​
+Where:
 
-=1(CCC(s,y)≥θ)
-Key Statement
+    ( C_\pi(s) ): policy-shaped admissible set
+    ( \pi ): policy
 
-A hit is defined by structural activation, not coordinate location.
+## 6. Policy Decision System (PDS)
 
-## 8. Metric Space Necessity (Core Breakthrough)
-Shift
+We define:
 
-Euclidean:
+    s = S(X)
+    C(s) = G(s)
+    \pi = P(s, C(s))
+    y^* = D(C(s), s, \pi)
 
-min⁡∥y−y∗∥
-min∥y−y
-∗
-∥
+Policy modifies the candidate space:
 
-Metric:
+    C_\pi(s) \subseteq C(s)
 
-(Y,d)
-(Y,d)
-Collapse of Targets
+### Key Insight
 
-In metric space, explicit targets disappear and become relational structures.
-
-Necessity Theorem
-
-CCC Triggering is not a heuristic, but a geometric inevitability.
-
-CCC Necessity Statement
-
-CCC Triggering is not a heuristic construct, but a geometric necessity.
-In metric spaces, where targets are no longer defined as explicit coordinates but as relational structures, decision-making cannot rely on positional optimization. Instead, it must be defined through structural activation conditions.
-
-CCC provides precisely this mechanism: it defines a triggering mapping over relational space, transforming the notion of “hitting a target” into “activating a valid structural alignment.”
-
-Therefore, CCC is not an optional component of intelligent systems, but a necessary consequence of operating in metric spaces.
-
-## 9. Dual-Metric Principle
-Focus Accuracy
-A=E[correct triggering]
-A=E[correct triggering]
-Applicability Ratio
-U=P[trigger exists]
-U=P[trigger exists]
-Optimization
-max⁡Aα⋅U1−α
-maxA
-α
-⋅U
-1−α
-Interpretation
-Regime	Meaning
-High A, Low U	precise but brittle
-Low A, High U	broad but weak
-High A, High U	strong CCC paradigm
-
-## 10. Discovery Bottleneck
-Statement
-
-The bottleneck of intelligence is the discovery of new CCC paradigms.
-
-Formalization
-Capability∝∣Ceffective∣
-Capability∝∣C
-effective
-	​
-
-∣
-Implication
-optimization → incremental
-CCC discovery → breakthrough
-
-## 11. Unified Equation Integration
-τ∗=arg⁡max⁡τEPπ[g(CCC(s,τ))]
-τ
-∗
-=arg
-τ
-max
-	​
-
-E
-P
-π
-	​
-
-	​
-
-[g(CCC(s,τ))]
-
-## 12. Engineering Mapping
-Theory	System
-CCC	feature / matcher
-Dispatch	Differential Tree
-Trigger	activation condition
-A	scoring
-U	coverage
-
-## 13. Final Theoretical Statement
-
-Intelligence is a process of projecting structure into a future space,
-where success is determined not by positional accuracy,
-but by the activation of valid structural mappings under CCC triggering.
-
-## 🌌 One-Line Summary (Final)
-
-A hit is not where you land — it is what structure you activate.
+Policy is not only selection — it is space deformation.
+
+## 7. Runtime Architecture
+
+        Input
+          ↓
+        State
+          ↓
+        Dispatch
+          ↓
+        Raw CCC
+          ↓
+        Trigger
+          ↓
+        Candidates
+          ↓
+        Score
+          ↓
+        Policy
+          ↓
+        Decision
+
+## 8. Experimental System
+### 8.1 Policy Profile Comparison
+- SAFE
+- AGGRESSIVE
+- TEST
+
+### 8.2 Threshold Sweep
+- controls admissible region size
+
+### 8.3 Combined Grid
+- profile × threshold
+- reveals decision surface
+
+## 9. Results
+
+Observations:
+
+- increasing threshold reduces candidate count
+- policy alters optimal choice
+- combined grid shows non-linear interaction
+
+### Key Result
+Decision = Structure × Policy
+
+## 10. Interpretation
+- Phase-1 defines feasible future space
+- Phase-2 ranks within that space
+- projection cannot recover lost structure
+
+## 11. Contributions
+- structural decision paradigm
+- CCC-triggered admissibility
+- two-phase architecture
+- policy-deformed decision space
+- executable reference system
+
+## 12. Implementation
+- Java 8
+- JUnit4
+- Markdown-native outputs
+
+## 13. Limitations
+- simplified CCC extraction
+- toy demonstration scale
+- no large-scale benchmark yet
+
+## 14. Future Work
+- trajectory CCC expansion
+- multi-agent PDS
+- continuous control formulation
+- integration with LLM / HLM
+
+## 15. Conclusion
+
+We propose a structural foundation for decision systems:
+
+> **Validity precedes optimality.**
+
+## One-Line Summary
+
+> **Structure first. Decision follows.**
