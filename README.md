@@ -141,7 +141,7 @@ PDS is a **unifying control framework** that can incorporate:
 
 # DBM-SI 3D Intelligence Space
 
-![DBM-SI-3D-Intelligence-Space.svg](assets/DBM-SI-3D-Intelligence-Space.svg)
+![DBM-SI-3D-Intelligence-Space.svg](assets/figures/DBM-SI-3D-Intelligence-Space.svg)
 
 ---
 

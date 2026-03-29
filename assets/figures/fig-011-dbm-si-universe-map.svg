@@ -1,0 +1,138 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+            <stop offset="0%" stop-color="#17233A"/>
+            <stop offset="100%" stop-color="#0B0F1A"/>
+        </radialGradient>
+        <style>
+            .title { font: 700 36px Arial, Helvetica, sans-serif; fill: #FFFFFF; }
+            .subtitle { font: 18px Arial, Helvetica, sans-serif; fill: #B8C0D0; }
+            .nodeTitle { font: 700 18px Arial, Helvetica, sans-serif; fill: #FFFFFF; }
+            .nodeText { font: 13px Arial, Helvetica, sans-serif; fill: #D9E1EE; }
+            .small { font: 12px Arial, Helvetica, sans-serif; fill: #B8C0D0; }
+        </style>
+    </defs>
+
+    <rect width="1600" height="1100" fill="url(#bg)"/>
+
+    <text x="800" y="75" text-anchor="middle" class="title">DBM-SI Universe Map</text>
+    <text x="800" y="108" text-anchor="middle" class="subtitle">
+        A unified visual ecosystem of structure, metric space, generation, trajectory, policy, and evolution
+    </text>
+
+    <!-- Center -->
+    <circle cx="800" cy="555" r="90" fill="#FFFFFF" opacity="0.08"/>
+    <circle cx="800" cy="555" r="62" fill="#FFFFFF"/>
+    <text x="800" y="548" text-anchor="middle" style="font:700 18px Arial, Helvetica, sans-serif; fill:#0B0F1A;">DBM-SI</text>
+    <text x="800" y="572" text-anchor="middle" style="font:700 12px Arial, Helvetica, sans-serif; fill:#0B0F1A;">Structural Intelligence</text>
+
+    <!-- Orbit rings -->
+    <circle cx="800" cy="555" r="210" fill="none" stroke="#32415E" stroke-width="1.5" stroke-dasharray="8,8"/>
+    <circle cx="800" cy="555" r="360" fill="none" stroke="#32415E" stroke-width="1.5" stroke-dasharray="8,8"/>
+
+    <!-- Inner ring nodes -->
+    <g>
+        <line x1="800" y1="555" x2="800" y2="345" stroke="#4DA3FF" stroke-width="2"/>
+        <circle cx="800" cy="345" r="58" fill="#1B2233" stroke="#4DA3FF" stroke-width="2.5"/>
+        <text x="800" y="338" text-anchor="middle" class="nodeTitle">CCC</text>
+        <text x="800" y="360" text-anchor="middle" class="small">Invariant / Structure</text>
+    </g>
+
+    <g>
+        <line x1="800" y1="555" x2="980" y2="430" stroke="#4DA3FF" stroke-width="2"/>
+        <circle cx="980" cy="430" r="58" fill="#1B2233" stroke="#4DA3FF" stroke-width="2.5"/>
+        <text x="980" y="422" text-anchor="middle" class="nodeTitle">P21</text>
+        <text x="980" y="444" text-anchor="middle" class="small">CPG</text>
+    </g>
+
+    <g>
+        <line x1="800" y1="555" x2="1020" y2="620" stroke="#FF9F4D" stroke-width="2"/>
+        <circle cx="1020" cy="620" r="58" fill="#1B2233" stroke="#FF9F4D" stroke-width="2.5"/>
+        <text x="1020" y="612" text-anchor="middle" class="nodeTitle">P22</text>
+        <text x="1020" y="634" text-anchor="middle" class="small">AMS</text>
+    </g>
+
+    <g>
+        <line x1="800" y1="555" x2="800" y2="770" stroke="#FFD24D" stroke-width="2"/>
+        <circle cx="800" cy="770" r="62" fill="#1B2233" stroke="#FFD24D" stroke-width="2.5"/>
+        <text x="800" y="760" text-anchor="middle" class="nodeTitle">Trajectory</text>
+        <text x="800" y="784" text-anchor="middle" class="small">Evolution / Motion</text>
+    </g>
+
+    <g>
+        <line x1="800" y1="555" x2="610" y2="635" stroke="#FF9F4D" stroke-width="2"/>
+        <circle cx="610" cy="635" r="62" fill="#1B2233" stroke="#FF9F4D" stroke-width="2.5"/>
+        <text x="610" y="624" text-anchor="middle" class="nodeTitle">PDS</text>
+        <text x="610" y="648" text-anchor="middle" class="small">Policy / Decision</text>
+    </g>
+
+    <g>
+        <line x1="800" y1="555" x2="620" y2="430" stroke="#4DA3FF" stroke-width="2"/>
+        <circle cx="620" cy="430" r="62" fill="#1B2233" stroke="#4DA3FF" stroke-width="2.5"/>
+        <text x="620" y="420" text-anchor="middle" class="nodeTitle">Metric</text>
+        <text x="620" y="444" text-anchor="middle" class="small">Space / Distance</text>
+    </g>
+
+    <!-- Outer ring nodes -->
+    <g>
+        <circle cx="800" cy="195" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="800" y="186" text-anchor="middle" class="nodeTitle">Differential Tree</text>
+        <text x="800" y="210" text-anchor="middle" class="small">Routing / Dispatch</text>
+    </g>
+
+    <g>
+        <circle cx="1135" cy="305" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="1135" y="296" text-anchor="middle" class="nodeTitle">Targeting</text>
+        <text x="1135" y="320" text-anchor="middle" class="small">Homing / Matching</text>
+    </g>
+
+    <g>
+        <circle cx="1280" cy="555" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="1280" y="546" text-anchor="middle" class="nodeTitle">Risk / TRI</text>
+        <text x="1280" y="570" text-anchor="middle" class="small">Trajectory Intelligence</text>
+    </g>
+
+    <g>
+        <circle cx="1130" cy="815" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="1130" y="806" text-anchor="middle" class="nodeTitle">SIEE / Growth</text>
+        <text x="1130" y="830" text-anchor="middle" class="small">CCC Evolution</text>
+    </g>
+
+    <g>
+        <circle cx="800" cy="915" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="800" y="906" text-anchor="middle" class="nodeTitle">Behavior CCC</text>
+        <text x="800" y="930" text-anchor="middle" class="small">Dynamic Structure</text>
+    </g>
+
+    <g>
+        <circle cx="470" cy="815" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="470" y="806" text-anchor="middle" class="nodeTitle">Rules Engines</text>
+        <text x="470" y="830" text-anchor="middle" class="small">Policy Logic / Handlers</text>
+    </g>
+
+    <g>
+        <circle cx="320" cy="555" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="320" y="546" text-anchor="middle" class="nodeTitle">HLM / LLM</text>
+        <text x="320" y="570" text-anchor="middle" class="small">Generative Surface</text>
+    </g>
+
+    <g>
+        <circle cx="465" cy="305" r="64" fill="#111827" stroke="#5A657A" stroke-width="2"/>
+        <text x="465" y="296" text-anchor="middle" class="nodeTitle">Two-Ways CCC</text>
+        <text x="465" y="320" text-anchor="middle" class="small">Comparative Core</text>
+    </g>
+
+    <!-- radial connectors -->
+    <line x1="800" y1="345" x2="800" y2="259" stroke="#5A657A" stroke-width="1.5"/>
+    <line x1="980" y1="430" x2="1080" y2="339" stroke="#5A657A" stroke-width="1.5"/>
+    <line x1="1020" y1="620" x2="1216" y2="571" stroke="#5A657A" stroke-width="1.5"/>
+    <line x1="800" y1="770" x2="800" y2="851" stroke="#5A657A" stroke-width="1.5"/>
+    <line x1="610" y1="635" x2="526" y2="770" stroke="#5A657A" stroke-width="1.5"/>
+    <line x1="620" y1="430" x2="524" y2="341" stroke="#5A657A" stroke-width="1.5"/>
+
+    <!-- bottom statement -->
+    <rect x="220" y="1000" width="1160" height="64" rx="18" fill="#111827" stroke="#5A657A"/>
+    <text x="800" y="1040" text-anchor="middle" class="nodeText" style="font-size:16px;">
+        DBM-SI unifies structure, metric space, generation, trajectory, policy, and evolution into one actionable intelligence universe.
+    </text>
+</svg>

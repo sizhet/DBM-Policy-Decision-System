@@ -1,0 +1,99 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0B0F1A"/>
+            <stop offset="100%" stop-color="#151F31"/>
+        </linearGradient>
+        <style>
+            .title { font: 700 34px Arial, Helvetica, sans-serif; fill: #FFFFFF; }
+            .subtitle { font: 18px Arial, Helvetica, sans-serif; fill: #B8C0D0; }
+            .panelTitle { font: 700 24px Arial, Helvetica, sans-serif; fill: #FFFFFF; }
+            .panelText { font: 14px Arial, Helvetica, sans-serif; fill: #D9E1EE; }
+            .small { font: 12px Arial, Helvetica, sans-serif; fill: #B8C0D0; }
+            .hero { font: 700 24px Arial, Helvetica, sans-serif; fill: #FFFFFF; }
+            .formulaBlue { font: 700 22px Arial, Helvetica, sans-serif; fill: #4DA3FF; }
+            .formulaOrange { font: 700 22px Arial, Helvetica, sans-serif; fill: #FF9F4D; }
+        </style>
+    </defs>
+
+    <rect width="1600" height="1000" fill="url(#bg)"/>
+
+    <text x="800" y="70" text-anchor="middle" class="title">
+        CCC-Preserved Generation × Actionable Metric Space
+    </text>
+    <text x="800" y="105" text-anchor="middle" class="subtitle">
+        Unified Canonical Poster for P21 and P22
+    </text>
+
+    <!-- Top hero box -->
+    <rect x="240" y="140" width="1120" height="96" rx="20" fill="#111827" stroke="#5A657A"/>
+    <text x="800" y="183" text-anchor="middle" class="hero">
+        Intelligence emerges when generation preserves structure
+    </text>
+    <text x="800" y="214" text-anchor="middle" class="hero">
+        and metric space becomes actionable.
+    </text>
+
+    <!-- Left panel P21 -->
+    <rect x="90" y="290" width="630" height="440" rx="24" fill="#121A2A" stroke="#4DA3FF" stroke-width="2"/>
+    <text x="405" y="340" text-anchor="middle" class="panelTitle">P21 — CCC-Preserved Generation</text>
+    <text x="405" y="380" text-anchor="middle" class="formulaBlue">CCC(G(x)) = CCC(x) + Δ_allowed</text>
+
+    <rect x="130" y="420" width="180" height="100" rx="18" fill="#1B2233" stroke="#5A657A"/>
+    <text x="220" y="457" text-anchor="middle" class="panelText">Input</text>
+    <text x="220" y="482" text-anchor="middle" class="small">raw state / prompt</text>
+
+    <rect x="360" y="420" width="180" height="100" rx="18" fill="#1B2233" stroke="#4DA3FF"/>
+    <text x="450" y="457" text-anchor="middle" class="panelText">CCC Extraction</text>
+    <text x="450" y="482" text-anchor="middle" class="small">invariant structure</text>
+
+    <rect x="130" y="570" width="410" height="110" rx="18" fill="#1B2233" stroke="#4DA3FF"/>
+    <text x="335" y="612" text-anchor="middle" class="panelText">Constrained Generation</text>
+    <text x="335" y="638" text-anchor="middle" class="small">surface changes allowed, destructive drift denied</text>
+
+    <line x1="310" y1="470" x2="360" y2="470" stroke="#4DA3FF" stroke-width="3"/>
+    <line x1="450" y1="520" x2="450" y2="570" stroke="#4DA3FF" stroke-width="3"/>
+
+    <!-- Right panel P22 -->
+    <rect x="880" y="290" width="630" height="440" rx="24" fill="#18131F" stroke="#FF9F4D" stroke-width="2"/>
+    <text x="1195" y="340" text-anchor="middle" class="panelTitle">P22 — Actionable Metric Space</text>
+    <text x="1195" y="380" text-anchor="middle" class="formulaOrange">d(x, y) → Signal → Score → Decision → Policy</text>
+
+    <rect x="930" y="430" width="110" height="92" rx="16" fill="#1B2233" stroke="#FF9F4D"/>
+    <text x="985" y="468" text-anchor="middle" class="small">Metric</text>
+    <text x="985" y="488" text-anchor="middle" class="small">Space</text>
+
+    <rect x="1060" y="430" width="110" height="92" rx="16" fill="#1B2233" stroke="#FF9F4D"/>
+    <text x="1115" y="468" text-anchor="middle" class="small">Signal</text>
+
+    <rect x="1190" y="430" width="110" height="92" rx="16" fill="#1B2233" stroke="#FF9F4D"/>
+    <text x="1245" y="468" text-anchor="middle" class="small">Score</text>
+
+    <rect x="1320" y="430" width="110" height="92" rx="16" fill="#1B2233" stroke="#FF9F4D"/>
+    <text x="1375" y="468" text-anchor="middle" class="small">Decision</text>
+
+    <rect x="1125" y="570" width="110" height="92" rx="16" fill="#1B2233" stroke="#FF9F4D"/>
+    <text x="1180" y="608" text-anchor="middle" class="small">Policy</text>
+
+    <line x1="1040" y1="476" x2="1060" y2="476" stroke="#FF9F4D" stroke-width="3"/>
+    <line x1="1170" y1="476" x2="1190" y2="476" stroke="#FF9F4D" stroke-width="3"/>
+    <line x1="1300" y1="476" x2="1320" y2="476" stroke="#FF9F4D" stroke-width="3"/>
+    <line x1="1375" y1="522" x2="1180" y2="570" stroke="#FF9F4D" stroke-width="3"/>
+
+    <!-- Center bridge -->
+    <circle cx="800" cy="510" r="46" fill="#FFFFFF"/>
+    <text x="800" y="505" text-anchor="middle" style="font:700 13px Arial, Helvetica, sans-serif; fill:#0B0F1A;">Structural</text>
+    <text x="800" y="523" text-anchor="middle" style="font:700 13px Arial, Helvetica, sans-serif; fill:#0B0F1A;">Intelligence</text>
+
+    <line x1="720" y1="510" x2="754" y2="510" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="846" y1="510" x2="880" y2="510" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Bottom unified loop -->
+    <rect x="220" y="790" width="1160" height="120" rx="24" fill="#111827" stroke="#5A657A"/>
+    <text x="800" y="835" text-anchor="middle" class="panelTitle" style="font-size:20px;">
+        Unified Structural Intelligence Loop
+    </text>
+    <text x="800" y="867" text-anchor="middle" class="panelText" style="font-size:16px;">
+        Metric Space → CCC Extraction → Preserved Generation → Decision → Policy → CCC Growth
+    </text>
+</svg>

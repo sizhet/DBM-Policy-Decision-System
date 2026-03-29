@@ -1,0 +1,92 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0B0F1A"/>
+            <stop offset="100%" stop-color="#121A2B"/>
+        </linearGradient>
+        <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <style>
+            .title { font: 700 30px Arial, Helvetica, sans-serif; fill: #FFFFFF; }
+            .subtitle { font: 16px Arial, Helvetica, sans-serif; fill: #B8C0D0; }
+            .nodeTitle { font: 700 20px Arial, Helvetica, sans-serif; fill: #FFFFFF; }
+            .nodeText { font: 13px Arial, Helvetica, sans-serif; fill: #D9E1EE; }
+            .small { font: 12px Arial, Helvetica, sans-serif; fill: #B8C0D0; }
+            .edgeText { font: 13px Arial, Helvetica, sans-serif; fill: #D9E1EE; }
+        </style>
+    </defs>
+
+    <rect width="1400" height="900" fill="url(#bg)"/>
+
+    <text x="700" y="70" text-anchor="middle" class="title">Structural Intelligence Trinity</text>
+    <text x="700" y="102" text-anchor="middle" class="subtitle">
+        CCC × Trajectory Intelligence × Policy &amp; Decision System
+    </text>
+
+    <!-- Triangle -->
+    <polygon points="700,180 390,650 1010,650"
+             fill="none" stroke="#5A657A" stroke-width="2" stroke-dasharray="8,6"/>
+
+    <!-- Edges -->
+    <line x1="700" y1="180" x2="390" y2="650" stroke="#6E7B95" stroke-width="2"/>
+    <line x1="700" y1="180" x2="1010" y2="650" stroke="#6E7B95" stroke-width="2"/>
+    <line x1="390" y1="650" x2="1010" y2="650" stroke="#6E7B95" stroke-width="2"/>
+
+    <!-- Center -->
+    <circle cx="700" cy="470" r="54" fill="#FFFFFF" opacity="0.08" filter="url(#softGlow)"/>
+    <circle cx="700" cy="470" r="36" fill="#FFFFFF"/>
+    <text x="700" y="476" text-anchor="middle" style="font:700 14px Arial, Helvetica, sans-serif; fill:#0B0F1A;">DBM-SI</text>
+
+    <!-- Top Node: CCC -->
+    <g>
+        <circle cx="700" cy="180" r="82" fill="#4DA3FF" opacity="0.18" filter="url(#softGlow)"/>
+        <circle cx="700" cy="180" r="68" fill="#1B2233" stroke="#4DA3FF" stroke-width="3"/>
+        <text x="700" y="168" text-anchor="middle" class="nodeTitle">CCC</text>
+        <text x="700" y="192" text-anchor="middle" class="small">Common Concept Core</text>
+        <text x="700" y="214" text-anchor="middle" class="small">Structure / Invariant</text>
+    </g>
+
+    <!-- Left Node: Trajectory -->
+    <g>
+        <circle cx="390" cy="650" r="88" fill="#FFD24D" opacity="0.18" filter="url(#softGlow)"/>
+        <circle cx="390" cy="650" r="72" fill="#1B2233" stroke="#FFD24D" stroke-width="3"/>
+        <text x="390" y="634" text-anchor="middle" class="nodeTitle">Trajectory</text>
+        <text x="390" y="658" text-anchor="middle" class="small">Evolution / Motion</text>
+        <text x="390" y="680" text-anchor="middle" class="small">Dynamics / History</text>
+    </g>
+
+    <!-- Right Node: PDS -->
+    <g>
+        <circle cx="1010" cy="650" r="92" fill="#FF9F4D" opacity="0.18" filter="url(#softGlow)"/>
+        <circle cx="1010" cy="650" r="76" fill="#1B2233" stroke="#FF9F4D" stroke-width="3"/>
+        <text x="1010" y="634" text-anchor="middle" class="nodeTitle">PDS</text>
+        <text x="1010" y="658" text-anchor="middle" class="small">Policy &amp; Decision</text>
+        <text x="1010" y="680" text-anchor="middle" class="small">Selection / Action</text>
+    </g>
+
+    <!-- Edge labels -->
+    <g>
+        <rect x="500" y="345" width="180" height="34" rx="10" fill="#111827" stroke="#5A657A"/>
+        <text x="590" y="367" text-anchor="middle" class="edgeText">Preserved Evolution</text>
+
+        <rect x="720" y="345" width="210" height="34" rx="10" fill="#111827" stroke="#5A657A"/>
+        <text x="825" y="367" text-anchor="middle" class="edgeText">Action-Constrained Generation</text>
+
+        <rect x="605" y="627" width="190" height="34" rx="10" fill="#111827" stroke="#5A657A"/>
+        <text x="700" y="649" text-anchor="middle" class="edgeText">Adaptive Decision Loop</text>
+    </g>
+
+    <!-- Bottom statement -->
+    <rect x="260" y="760" width="880" height="82" rx="18" fill="#111827" stroke="#5A657A"/>
+    <text x="700" y="798" text-anchor="middle" class="nodeTitle" style="font-size:18px;">
+        Intelligence emerges when structure is preserved,
+    </text>
+    <text x="700" y="824" text-anchor="middle" class="nodeText" style="font-size:15px;">
+        trajectory is modeled, and policy selects among actionable possibilities.
+    </text>
+</svg>
