@@ -1,0 +1,92 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Background -->
+    <rect width="1200" height="800" fill="#0b0f1a"/>
+
+    <!-- Center -->
+    <circle cx="600" cy="400" r="6" fill="#ffffff"/>
+
+    <!-- ===================== -->
+    <!-- AXES -->
+    <!-- ===================== -->
+
+    <!-- X Axis (Structure - Blue) -->
+    <line x1="600" y1="400" x2="950" y2="400" stroke="#4da3ff" stroke-width="3"/>
+    <text x="960" y="405" fill="#4da3ff" font-size="16">Structure (CCC)</text>
+
+    <!-- Y Axis (Action - Orange, angled) -->
+    <line x1="600" y1="400" x2="350" y2="150" stroke="#ff9f4d" stroke-width="3"/>
+    <text x="300" y="140" fill="#ff9f4d" font-size="16">Action (Metric)</text>
+
+    <!-- Z Axis (Evolution - Gold, vertical) -->
+    <line x1="600" y1="400" x2="600" y2="100" stroke="#ffd24d" stroke-width="3"/>
+    <text x="610" y="95" fill="#ffd24d" font-size="16">Evolution (Trajectory)</text>
+
+    <!-- ===================== -->
+    <!-- ARROWS -->
+    <!-- ===================== -->
+
+    <!-- Arrowheads -->
+    <defs>
+        <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#4da3ff"/>
+        </marker>
+        <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#ff9f4d"/>
+        </marker>
+        <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#ffd24d"/>
+        </marker>
+    </defs>
+
+    <!-- Apply arrowheads -->
+    <line x1="600" y1="400" x2="950" y2="400" stroke="#4da3ff" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="600" y1="400" x2="350" y2="150" stroke="#ff9f4d" stroke-width="3" marker-end="url(#arrowOrange)"/>
+    <line x1="600" y1="400" x2="600" y2="100" stroke="#ffd24d" stroke-width="3" marker-end="url(#arrowGold)"/>
+
+    <!-- ===================== -->
+    <!-- INTELLIGENCE VOLUME (transparent pyramid) -->
+    <!-- ===================== -->
+
+    <polygon points="600,100 950,400 600,400 350,150"
+             fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+    <!-- ===================== -->
+    <!-- CORE NODE -->
+    <!-- ===================== -->
+
+    <circle cx="600" cy="400" r="10" fill="#ffffff"/>
+    <text x="610" y="430" fill="#ffffff" font-size="14">Intelligence State</text>
+
+    <!-- ===================== -->
+    <!-- FLOW CURVES -->
+    <!-- ===================== -->
+
+    <!-- CCC Preservation (X-axis curve) -->
+    <path d="M600 400 C700 380, 820 390, 900 400"
+          stroke="#4da3ff" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    <text x="750" y="370" fill="#4da3ff" font-size="12">CCC Preserved Generation</text>
+
+    <!-- Metric → Decision (Y-axis curve) -->
+    <path d="M600 400 C550 300, 450 220, 350 150"
+          stroke="#ff9f4d" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    <text x="420" y="260" fill="#ff9f4d" font-size="12">Distance → Decision</text>
+
+    <!-- Evolution trajectory (Z-axis curve) -->
+    <path d="M600 400 C600 320, 600 220, 600 120"
+          stroke="#ffd24d" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    <text x="620" y="260" fill="#ffd24d" font-size="12">Trajectory Evolution</text>
+
+    <!-- ===================== -->
+    <!-- TITLE -->
+    <!-- ===================== -->
+
+    <text x="600" y="60" fill="#ffffff" font-size="28" text-anchor="middle">
+        DBM-SI 3D Intelligence Space
+    </text>
+
+    <text x="600" y="85" fill="#aaaaaa" font-size="14" text-anchor="middle">
+        CCC-Preserved Generation × Actionable Metric Space × Trajectory Evolution
+    </text>
+
+</svg>
