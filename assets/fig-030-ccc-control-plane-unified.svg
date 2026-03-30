@@ -1,0 +1,80 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Background -->
+    <rect width="1200" height="800" fill="#0b0f1a"/>
+
+    <!-- Title -->
+    <text x="600" y="60" fill="#FFD700" font-size="32" text-anchor="middle" font-family="Arial">
+        CCC Control Plane — Structural Intelligence Control Layer
+    </text>
+
+    <!-- Core Pipeline -->
+    <g font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle">
+
+        <rect x="80" y="350" width="120" height="50" fill="#1f2a44" rx="8"/>
+        <text x="140" y="380">Observer</text>
+
+        <rect x="240" y="350" width="120" height="50" fill="#1f2a44" rx="8"/>
+        <text x="300" y="380">IR</text>
+
+        <rect x="400" y="350" width="120" height="50" fill="#2d4f7c" rx="8"/>
+        <text x="460" y="380">CCC</text>
+
+        <rect x="560" y="350" width="150" height="50" fill="#1f2a44" rx="8"/>
+        <text x="635" y="380">Differential Routing</text>
+
+        <rect x="750" y="350" width="120" height="50" fill="#1f2a44" rx="8"/>
+        <text x="810" y="380">f(x)</text>
+
+        <rect x="900" y="350" width="120" height="50" fill="#1f2a44" rx="8"/>
+        <text x="960" y="380">Decision</text>
+
+        <rect x="1040" y="350" width="120" height="50" fill="#1f2a44" rx="8"/>
+        <text x="1100" y="380">Policy</text>
+    </g>
+
+    <!-- Arrows -->
+    <g stroke="#888" stroke-width="2" marker-end="url(#arrow)">
+        <line x1="200" y1="375" x2="240" y2="375"/>
+        <line x1="360" y1="375" x2="400" y2="375"/>
+        <line x1="520" y1="375" x2="560" y2="375"/>
+        <line x1="710" y1="375" x2="750" y2="375"/>
+        <line x1="870" y1="375" x2="900" y2="375"/>
+        <line x1="1020" y1="375" x2="1040" y2="375"/>
+    </g>
+
+    <!-- CCC Control Plane Layer -->
+    <rect x="150" y="200" width="900" height="100" fill="#FFD700" opacity="0.15" rx="20"/>
+    <text x="600" y="255" fill="#FFD700" font-size="22" text-anchor="middle">
+        CCC Control Plane
+    </text>
+
+    <!-- Control Functions -->
+    <g font-size="14" fill="#FFD700" text-anchor="middle">
+        <text x="300" y="290">Extraction</text>
+        <text x="450" y="290">Anchoring</text>
+        <text x="600" y="290">Propagation</text>
+        <text x="750" y="290">Validation</text>
+        <text x="900" y="290">Evolution</text>
+    </g>
+
+    <!-- Vertical Connections -->
+    <g stroke="#FFD700" stroke-width="1.5" stroke-dasharray="5,5">
+        <line x1="460" y1="300" x2="460" y2="350"/>
+        <line x1="810" y1="300" x2="810" y2="350"/>
+        <line x1="960" y1="300" x2="960" y2="350"/>
+    </g>
+
+    <!-- Bottom Annotation -->
+    <text x="600" y="700" fill="#aaa" font-size="16" text-anchor="middle">
+        Unifying Generation (Expansion) and Targeting (Convergence) under CCC Governance
+    </text>
+
+    <!-- Arrow Definition -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" orient="auto">
+            <path d="M0,0 L10,3 L0,6 Z" fill="#888"/>
+        </marker>
+    </defs>
+
+</svg>
