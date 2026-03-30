@@ -47,13 +47,13 @@ CCC + Trajectory + Policy Decision
 ## Level 4 — Principles & Mechanisms
 
 - MET (Minimal Evolution Threshold)
-- Observer-Centeric Perspective
+- Observer-Centric Perspective
 - APCTGOE (Structure-aware evolution loop)
 - Control Strategies (e.g., Fish-Control)
 
 ---
 
-## Level 4b — CCC Algorithms
+## Level 4b — Core CCC Algorithms
 
 - Two-ways CCC
 - Trajectory CCC

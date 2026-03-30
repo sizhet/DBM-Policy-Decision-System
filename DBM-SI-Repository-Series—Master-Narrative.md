@@ -300,23 +300,26 @@ The value lies not only in each result, but in:
 5. Behavioral CCC and Trajectory Intelligence \
     https://github.com/sizhet/Behavioral-CCC-Trajectory-Intelligence
         
-6. Trajectory Risk Intelligence (in process) \
+6. Trajectory Risk Intelligence \
     https://github.com/sizhet/Trajectory-Risk-Intelligence
 
-7. Structural Intelligence Evolution Engine (SIEE, in process) \
+7. DBM Policy Decision System (PDS) \
+    https://github.com/sizhet/DBM-Policy-Decision-System    
+
+8. Structural Intelligence Evolution Engine (SIEE) \
     https://github.com/sizhet/Structural-Intelligence-Evolution-Engine
     
-8. Structural Intelligence Paradigm \
+9. Structural Intelligence Paradigm \
     https://github.com/sizhet/Structural-Intelligence-Paradigm
     
-9. Structural Intelligence Ontology (SIO) \
+10. Structural Intelligence Ontology (SIO) \
     https://github.com/sizhet/Structural-Intelligence-Ontology-SIO
 
-10. DBM-SI Structural Messaging \
+11. DBM-SI Structural Messaging \
     https://github.com/sizhet/DBM-SI-Structural-Messaging
     
-11. Digital Brain Model – Chain of Thoughts (DBM-COT) \
+12. Digital Brain Model – Chain of Thoughts (DBM-COT) \
     https://github.com/sizhet/Digital-Brain-Model-Chain-of-Thoughts
 
-12. DBM Policy Decision System (PDS, in process)
-    https://github.com/sizhet/DBM-Policy-Decision-System
+
+    
