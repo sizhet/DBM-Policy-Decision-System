@@ -1,0 +1,294 @@
+<svg width="1400" height="980" viewBox="0 0 1400 980" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Background gradients -->
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#07111f"/>
+            <stop offset="45%" stop-color="#0b1630"/>
+            <stop offset="100%" stop-color="#120c22"/>
+        </linearGradient>
+
+        <!-- Core glow -->
+        <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="18%" stop-color="#dff8ff"/>
+            <stop offset="45%" stop-color="#67d9ff"/>
+            <stop offset="75%" stop-color="#169dff"/>
+            <stop offset="100%" stop-color="#0c3d7f"/>
+        </radialGradient>
+
+        <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur stdDeviation="12" result="blur1"/>
+            <feMerge>
+                <feMergeNode in="blur1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <filter id="bigGlow" x="-120%" y="-120%" width="340%" height="340%">
+            <feGaussianBlur stdDeviation="28" result="blur2"/>
+            <feMerge>
+                <feMergeNode in="blur2"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <filter id="fieldGlow" x="-120%" y="-120%" width="340%" height="340%">
+            <feGaussianBlur stdDeviation="5" result="blur3"/>
+            <feMerge>
+                <feMergeNode in="blur3"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <marker id="arrowWhite" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L14,7 L0,14 z" fill="#eaf4ff"/>
+        </marker>
+
+        <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L14,7 L0,14 z" fill="#67d9ff"/>
+        </marker>
+
+        <marker id="arrowOrange" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L14,7 L0,14 z" fill="#ffb14a"/>
+        </marker>
+
+        <marker id="arrowGreen" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L14,7 L0,14 z" fill="#6de0a8"/>
+        </marker>
+
+        <marker id="arrowPurple" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L14,7 L0,14 z" fill="#c99dff"/>
+        </marker>
+
+        <!-- Panel gradients -->
+        <linearGradient id="cpteGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#144d87"/>
+            <stop offset="100%" stop-color="#1f8fda"/>
+        </linearGradient>
+
+        <linearGradient id="cheGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#8a4300"/>
+            <stop offset="100%" stop-color="#ff9f2e"/>
+        </linearGradient>
+
+        <linearGradient id="humanGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#14664c"/>
+            <stop offset="100%" stop-color="#28b37f"/>
+        </linearGradient>
+
+        <linearGradient id="pdsGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#59308f"/>
+            <stop offset="100%" stop-color="#9d64e6"/>
+        </linearGradient>
+
+        <style>
+            .title { font-family: Arial, Helvetica, sans-serif; fill: #ffffff; font-weight: 700; }
+            .subtitle { font-family: Arial, Helvetica, sans-serif; fill: #b8c7e6; font-weight: 400; }
+            .label { font-family: Arial, Helvetica, sans-serif; fill: #ffffff; font-weight: 700; }
+            .small { font-family: Arial, Helvetica, sans-serif; fill: #dce7ff; font-size: 15px; }
+            .tiny { font-family: Arial, Helvetica, sans-serif; fill: #9fb3d9; font-size: 12px; }
+            .fieldText { font-family: Arial, Helvetica, sans-serif; fill: #ffd59c; font-size: 12px; }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1400" height="980" fill="url(#bgGrad)"/>
+
+    <!-- Distant stars -->
+    <g opacity="0.65">
+        <circle cx="70" cy="90" r="1.5" fill="#d8e6ff"/>
+        <circle cx="150" cy="170" r="1.2" fill="#b9cbff"/>
+        <circle cx="310" cy="110" r="1.6" fill="#d8e6ff"/>
+        <circle cx="1240" cy="140" r="1.8" fill="#e9f3ff"/>
+        <circle cx="1320" cy="220" r="1.4" fill="#c7d9ff"/>
+        <circle cx="1160" cy="90" r="1.2" fill="#d8e6ff"/>
+        <circle cx="1080" cy="300" r="1.1" fill="#c7d9ff"/>
+        <circle cx="240" cy="880" r="1.7" fill="#d8e6ff"/>
+        <circle cx="1290" cy="850" r="1.5" fill="#e9f3ff"/>
+        <circle cx="1160" cy="760" r="1.3" fill="#c7d9ff"/>
+        <circle cx="85" cy="760" r="1.4" fill="#c7d9ff"/>
+        <circle cx="210" cy="640" r="1.2" fill="#e9f3ff"/>
+        <circle cx="980" cy="850" r="1.1" fill="#d8e6ff"/>
+        <circle cx="670" cy="70" r="1.7" fill="#ffffff"/>
+        <circle cx="730" cy="78" r="1.0" fill="#d8e6ff"/>
+    </g>
+
+    <!-- Titles -->
+    <text x="700" y="52" text-anchor="middle" font-size="34" class="title">
+        CCC Control Plane — V2
+    </text>
+    <text x="700" y="84" text-anchor="middle" font-size="18" class="subtitle">
+        Glow + Field + Trajectory Visualization of the Unified Structural Intelligence Control Layer
+    </text>
+
+    <!-- Large field rings -->
+    <g opacity="0.18" filter="url(#fieldGlow)">
+        <circle cx="700" cy="490" r="300" fill="none" stroke="#3bc7ff" stroke-width="2"/>
+        <circle cx="700" cy="490" r="230" fill="none" stroke="#61d8ff" stroke-width="2"/>
+        <circle cx="700" cy="490" r="165" fill="none" stroke="#7fe4ff" stroke-width="1.5"/>
+        <ellipse cx="700" cy="490" rx="385" ry="230" fill="none" stroke="#684bff" stroke-width="1.4"/>
+        <ellipse cx="700" cy="490" rx="450" ry="280" fill="none" stroke="#2da6ff" stroke-width="1.1"/>
+    </g>
+
+    <!-- Potential field arcs -->
+    <g opacity="0.45">
+        <path d="M 400 655 C 510 615, 560 590, 630 542" fill="none" stroke="#ffb14a" stroke-width="2.2" stroke-dasharray="7 7"/>
+        <path d="M 990 660 C 890 610, 840 590, 768 542" fill="none" stroke="#ffb14a" stroke-width="2.2" stroke-dasharray="7 7"/>
+        <path d="M 470 760 C 560 700, 610 640, 665 560" fill="none" stroke="#ffcf84" stroke-width="1.7" stroke-dasharray="5 7"/>
+        <path d="M 930 760 C 840 700, 790 640, 735 560" fill="none" stroke="#ffcf84" stroke-width="1.7" stroke-dasharray="5 7"/>
+    </g>
+
+    <!-- Top CPTE panel -->
+    <g filter="url(#softGlow)">
+        <rect x="510" y="130" width="380" height="110" rx="18" fill="url(#cpteGrad)" opacity="0.96"/>
+        <text x="700" y="170" text-anchor="middle" font-size="26" class="label">CPTE</text>
+        <text x="700" y="198" text-anchor="middle" class="small">CCC-Preserved Transformation Engine</text>
+        <text x="700" y="221" text-anchor="middle" class="tiny">Structure Extraction · Readable Projection · Round-trip Validation</text>
+    </g>
+
+    <!-- CPTE inner flow -->
+    <g opacity="0.85">
+        <rect x="560" y="255" width="110" height="34" rx="8" fill="#10345d"/>
+        <rect x="645" y="255" width="110" height="34" rx="8" fill="#0f466a"/>
+        <rect x="730" y="255" width="110" height="34" rx="8" fill="#106088"/>
+        <text x="615" y="277" text-anchor="middle" class="tiny" fill="#eaf4ff">Extract</text>
+        <text x="700" y="277" text-anchor="middle" class="tiny" fill="#eaf4ff">Project</text>
+        <text x="785" y="277" text-anchor="middle" class="tiny" fill="#eaf4ff">Validate</text>
+        <line x1="670" y1="272" x2="645" y2="272" stroke="#9fdfff" stroke-width="2" marker-end="url(#arrowBlue)"/>
+        <line x1="755" y1="272" x2="730" y2="272" stroke="#9fdfff" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    </g>
+
+    <!-- Bottom CHE panel -->
+    <g filter="url(#softGlow)">
+        <rect x="510" y="760" width="380" height="110" rx="18" fill="url(#cheGrad)" opacity="0.97"/>
+        <text x="700" y="800" text-anchor="middle" font-size="26" class="label">CHE</text>
+        <text x="700" y="828" text-anchor="middle" class="small">CCC Homing Engine</text>
+        <text x="700" y="851" text-anchor="middle" class="tiny">Targeting · Potential Field · Multi-CCC Navigation · Interference Handling</text>
+    </g>
+
+    <!-- Left Human / Trust -->
+    <g filter="url(#softGlow)">
+        <rect x="90" y="415" width="300" height="120" rx="18" fill="url(#humanGrad)" opacity="0.97"/>
+        <text x="240" y="456" text-anchor="middle" font-size="26" class="label">Human / Trust Layer</text>
+        <text x="240" y="485" text-anchor="middle" class="small">Interpretability · Audit · Steering</text>
+        <text x="240" y="508" text-anchor="middle" class="tiny">Understanding, Control, Verification, Policy Feedback</text>
+    </g>
+
+    <!-- Right PDS -->
+    <g filter="url(#softGlow)">
+        <rect x="1010" y="415" width="300" height="120" rx="18" fill="url(#pdsGrad)" opacity="0.97"/>
+        <text x="1160" y="456" text-anchor="middle" font-size="26" class="label">PDS</text>
+        <text x="1160" y="485" text-anchor="middle" class="small">Policy &amp; Decision System</text>
+        <text x="1160" y="508" text-anchor="middle" class="tiny">Scoring, Ranking, Strategy, Risk, Constraint Enforcement</text>
+    </g>
+
+    <!-- Central CCC Core glow -->
+    <g>
+        <circle cx="700" cy="490" r="132" fill="#2ba6ff" opacity="0.13" filter="url(#bigGlow)"/>
+        <circle cx="700" cy="490" r="98" fill="#3fd0ff" opacity="0.18" filter="url(#softGlow)"/>
+        <circle cx="700" cy="490" r="76" fill="url(#coreGrad)" filter="url(#softGlow)"/>
+        <circle cx="700" cy="490" r="52" fill="#eafcff" opacity="0.23"/>
+        <text x="700" y="482" text-anchor="middle" font-size="28" class="label" fill="#05111f">CCC</text>
+        <text x="700" y="510" text-anchor="middle" font-size="16" fill="#092239" font-family="Arial, Helvetica, sans-serif" font-weight="700">Core</text>
+    </g>
+
+    <!-- Core descriptors -->
+    <g>
+        <rect x="620" y="555" width="160" height="26" rx="8" fill="#0d1e39" opacity="0.92"/>
+        <text x="700" y="572" text-anchor="middle" class="tiny" fill="#dff0ff">Static · Behavioral · Trajectory CCC</text>
+    </g>
+
+    <!-- Main axis arrows -->
+    <g opacity="0.95">
+        <line x1="700" y1="290" x2="700" y2="402" stroke="#9fdfff" stroke-width="3" marker-end="url(#arrowBlue)"/>
+        <line x1="700" y1="578" x2="700" y2="760" stroke="#ffcf84" stroke-width="3" marker-end="url(#arrowOrange)"/>
+        <line x1="390" y1="475" x2="595" y2="475" stroke="#8be0b7" stroke-width="3" marker-end="url(#arrowGreen)"/>
+        <line x1="805" y1="505" x2="1010" y2="505" stroke="#d5b7ff" stroke-width="3" marker-end="url(#arrowPurple)"/>
+    </g>
+
+    <!-- Labels around arrows -->
+    <text x="720" y="356" class="tiny" fill="#9fdfff">Expression Control</text>
+    <text x="716" y="684" class="tiny" fill="#ffd59c">State Navigation</text>
+    <text x="460" y="462" class="tiny" fill="#9df0c6">Trust Feedback</text>
+    <text x="876" y="492" class="tiny" fill="#d8beff">Decision Coupling</text>
+
+    <!-- Curved coupling arrows -->
+    <path d="M 360 415 C 475 280, 565 250, 650 245" fill="none" stroke="#5fd7a0" stroke-width="2.3" opacity="0.62" marker-end="url(#arrowGreen)"/>
+    <path d="M 1040 415 C 925 280, 835 250, 750 245" fill="none" stroke="#b98cff" stroke-width="2.3" opacity="0.62" marker-end="url(#arrowPurple)"/>
+    <path d="M 360 535 C 500 640, 580 710, 655 760" fill="none" stroke="#59d89f" stroke-width="2.1" opacity="0.46" marker-end="url(#arrowGreen)"/>
+    <path d="M 1040 535 C 900 640, 820 710, 745 760" fill="none" stroke="#ba8cff" stroke-width="2.1" opacity="0.46" marker-end="url(#arrowPurple)"/>
+
+    <!-- Trajectory curves below core -->
+    <g opacity="0.9">
+        <path d="M 520 708 C 575 650, 625 610, 680 565 C 695 553, 700 545, 706 535" fill="none" stroke="#ffb14a" stroke-width="3" marker-end="url(#arrowOrange)"/>
+        <path d="M 880 712 C 828 654, 778 614, 724 568 C 710 556, 706 547, 700 538" fill="none" stroke="#ffb14a" stroke-width="3" marker-end="url(#arrowOrange)"/>
+        <path d="M 470 782 C 570 735, 640 672, 684 610" fill="none" stroke="#ffd496" stroke-width="2.2" stroke-dasharray="5 7"/>
+        <path d="M 930 782 C 830 735, 760 672, 716 610" fill="none" stroke="#ffd496" stroke-width="2.2" stroke-dasharray="5 7"/>
+        <circle cx="520" cy="708" r="5" fill="#ffd08a"/>
+        <circle cx="880" cy="712" r="5" fill="#ffd08a"/>
+        <circle cx="470" cy="782" r="4" fill="#ffd08a"/>
+        <circle cx="930" cy="782" r="4" fill="#ffd08a"/>
+    </g>
+
+    <!-- Attractors / repulsors -->
+    <g opacity="0.95">
+        <!-- Attractor left -->
+        <circle cx="470" cy="782" r="18" fill="none" stroke="#ffb14a" stroke-width="2"/>
+        <circle cx="470" cy="782" r="9" fill="#ffb14a"/>
+        <text x="442" y="815" class="fieldText">CCC Attractor</text>
+
+        <!-- Attractor right -->
+        <circle cx="930" cy="782" r="18" fill="none" stroke="#ffb14a" stroke-width="2"/>
+        <circle cx="930" cy="782" r="9" fill="#ffb14a"/>
+        <text x="902" y="815" class="fieldText">CCC Attractor</text>
+
+        <!-- Repulsor left -->
+        <circle cx="400" cy="690" r="16" fill="none" stroke="#8fb7ff" stroke-width="2"/>
+        <line x1="390" y1="680" x2="410" y2="700" stroke="#8fb7ff" stroke-width="2"/>
+        <line x1="410" y1="680" x2="390" y2="700" stroke="#8fb7ff" stroke-width="2"/>
+        <text x="355" y="722" class="tiny" fill="#b7ceff">Repulsor / Noise</text>
+
+        <!-- Repulsor right -->
+        <circle cx="1000" cy="692" r="16" fill="none" stroke="#8fb7ff" stroke-width="2"/>
+        <line x1="990" y1="682" x2="1010" y2="702" stroke="#8fb7ff" stroke-width="2"/>
+        <line x1="1010" y1="682" x2="990" y2="702" stroke="#8fb7ff" stroke-width="2"/>
+        <text x="962" y="724" class="tiny" fill="#b7ceff">Repulsor / Noise</text>
+    </g>
+
+    <!-- CPTE projected beams -->
+    <g opacity="0.7" filter="url(#fieldGlow)">
+        <path d="M 610 240 C 620 310, 640 355, 672 410" fill="none" stroke="#7fe4ff" stroke-width="2.6"/>
+        <path d="M 700 240 C 700 310, 700 350, 700 410" fill="none" stroke="#9cecff" stroke-width="2.8"/>
+        <path d="M 790 240 C 780 310, 760 355, 728 410" fill="none" stroke="#7fe4ff" stroke-width="2.6"/>
+    </g>
+
+    <!-- Small legend -->
+    <g opacity="0.92">
+        <rect x="72" y="845" width="350" height="95" rx="14" fill="#0e1730" stroke="#293c66" stroke-width="1.2"/>
+        <text x="94" y="872" class="small" fill="#ffffff">Legend</text>
+        <line x1="96" y1="892" x2="136" y2="892" stroke="#9fdfff" stroke-width="3" marker-end="url(#arrowBlue)"/>
+        <text x="148" y="896" class="tiny" fill="#dbe8ff">Projection / expression control</text>
+        <line x1="96" y1="914" x2="136" y2="914" stroke="#ffcf84" stroke-width="3" marker-end="url(#arrowOrange)"/>
+        <text x="148" y="918" class="tiny" fill="#dbe8ff">Trajectory / homing control</text>
+        <circle cx="104" cy="934" r="7" fill="#ffb14a"/>
+        <text x="148" y="938" class="tiny" fill="#dbe8ff">Attractor CCC</text>
+        <circle cx="250" cy="934" r="8" fill="none" stroke="#8fb7ff" stroke-width="2"/>
+        <line x1="244" y1="928" x2="256" y2="940" stroke="#8fb7ff" stroke-width="1.6"/>
+        <line x1="256" y1="928" x2="244" y2="940" stroke="#8fb7ff" stroke-width="1.6"/>
+        <text x="270" y="938" class="tiny" fill="#dbe8ff">Noise / repulsor</text>
+    </g>
+
+    <!-- Positioning statement -->
+    <g opacity="0.95">
+        <rect x="940" y="846" width="382" height="92" rx="14" fill="#0f1731" stroke="#31446f" stroke-width="1.2"/>
+        <text x="1131" y="875" text-anchor="middle" class="small" fill="#ffffff">
+            Positioning
+        </text>
+        <text x="1131" y="903" text-anchor="middle" class="tiny" fill="#dce7ff">
+            CCC Control Plane governs
+        </text>
+        <text x="1131" y="924" text-anchor="middle" class="tiny" fill="#dce7ff">
+            representation, navigation, and decision
+        </text>
+    </g>
+</svg>
