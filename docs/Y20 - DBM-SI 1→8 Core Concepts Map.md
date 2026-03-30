@@ -53,6 +53,15 @@ CCC + Trajectory + Policy Decision
 
 ---
 
+## Level 4b — CCC Algorithms
+
+- Two-ways CCC
+- Trajectory CCC
+- CCC-preserved Generation
+- CCC-based Targeting/Homing
+
+---
+
 ## Level 5 — Functional Interface
 
 X → f(X) → Y → Decision → Policy
