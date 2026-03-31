@@ -51,7 +51,8 @@ Goal:
 ## ⚙ Engineering Entry
 
 - src/ → Java skeleton
-- examples/ → demos
+- docs/ → documents
+- assets/ → draws
 
 ---
 
@@ -66,5 +67,4 @@ Goal:
 
 > PDS is not a model.  
 > It is a **decision architecture**.
->
->
+
