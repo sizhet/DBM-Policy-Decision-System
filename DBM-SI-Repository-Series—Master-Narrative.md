@@ -321,5 +321,6 @@ The value lies not only in each result, but in:
 12. Digital Brain Model – Chain of Thoughts (DBM-COT) \
     https://github.com/sizhet/Digital-Brain-Model-Chain-of-Thoughts
 
-
+13. Hyper Language Model (HLM): From Language Generation to Structural Intelligence and Collective Intelligence Systems
+    https://github.com/sizhet/Hyper-Language-Model
     
