@@ -159,9 +159,9 @@ Repository: https://github.com/sizhet/DBM-Policy-Decision-System
 
 ## DBM-SI Series of gitHub Repositories
 
-[DBM-SI-Repository-Series—Master-Narrative.md](DBM-SI-Repository-Series—Master-Narrative.md)
+[DBM-SI-Repository-Series—Master-Narrative.md](docs/DBM-SI-Series-of-gitHub-Repositories/DBM-SI-Repository-Series—Master-Narrative.md)
 
 ## DBM-SI Core Concepts Summary by Numbers
 
-[DBM-SI-Core-Concepts-Summary-by-Numbers.md](DBM-SI-Core-Concepts-Summary-by-Numbers.md)
+[DBM-SI-Core-Concepts-Summary-by-Numbers.md](docs/DBM-SI-Series-of-gitHub-Repositories/DBM-SI-Core-Concepts-Summary-by-Numbers.md)
 
