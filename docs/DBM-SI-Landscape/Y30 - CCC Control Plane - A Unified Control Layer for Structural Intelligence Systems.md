@@ -3,7 +3,7 @@
 
 ---
 
-![fig-002-ccc-control-plane-v2-glow-field-trajectory.svg](../assets/figures/fig-002-ccc-control-plane-v2-glow-field-trajectory.svg)
+![fig-002-ccc-control-plane-v2-glow-field-trajectory.svg](../../assets/figures/fig-002-ccc-control-plane-v2-glow-field-trajectory.svg)
 
 ---
 ## Abstract

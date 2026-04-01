@@ -72,7 +72,7 @@ Our contributions:
 
 ---
 
-![fig-030-ccc-control-plane-unified.svg](../assets/fig-030-ccc-control-plane-unified.svg)
+![fig-030-ccc-control-plane-unified.svg](../../assets/fig-030-ccc-control-plane-unified.svg)
 
 ---
 
