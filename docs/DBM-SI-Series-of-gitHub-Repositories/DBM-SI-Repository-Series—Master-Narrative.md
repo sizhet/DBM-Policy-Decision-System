@@ -324,3 +324,6 @@ The value lies not only in each result, but in:
 13. Hyper Language Model (HLM): From Language Generation to Structural Intelligence and Collective Intelligence Systems
     https://github.com/sizhet/Hyper-Language-Model
     
+14. CallingGraph CCC (CG-CCC) — The Missing Execution Substrate for Structural Intelligence
+    Repository: https://github.com/sizhet/CallingGraph-CCC-for-AI-Coding-HLM-and-Human-Control
+       
