@@ -76,7 +76,7 @@ extension into **Behavioral CCC**
 
 #### Key Contribution
 
-establishing CCC as a **minimal structural unit of intelligence**
+establishing CCC (Common Concept Core) as a **minimal structural unit of intelligence**
 enabling comparison, alignment, and generalization across domains
 
 This phase marks the first true **structural primitive** in the system.
@@ -155,6 +155,16 @@ This phase marks the first true **structural primitive** in the system.
     * structure-based communication paradigm
     * encoding meaning via shared structure
 
+5. **Hyper Language Model (HLM)** 
+    * from language generation to structural intelligence
+    * expanding LLM with generated CCC and knowledge
+    * collective intelligence systems
+       ↓ 
+6. **CallingGraph CCC (CG-CCC)** 
+    * execution substrate for structural intelligence
+    * for hyper language model control
+    * for AI coding governance
+
 > This phase completes the transition from **concept → system → runtime → artifact**.
 
 ## 4. The Evolution Graph (Conceptual Map)
@@ -174,6 +184,10 @@ This phase marks the first true **structural primitive** in the system.
     SIRA
        ↓
     DBM-SI Architecture (Top View)
+       ↓
+    Hyper Language Model (HLM)
+       ↓ 
+    CallingGraph CCC (CG-CCC)
 
 ## 5. Repository Roles (Condensed Table)
 
@@ -190,6 +204,8 @@ This phase marks the first true **structural primitive** in the system.
 |SIEE	|Evolution engine
 |SIRA	|Implementation architecture
 |DBM-SI Architecture	|Top-level integration view
+|Hyper Language Model (HLM) | From Language Generation to Structural Intelligence and Collective Intelligence Systems
+|CallingGraph CCC (CG-CCC) |The Missing Execution Substrate for Structural Intelligence
 
 ## 6. Key Structural Transitions
 
