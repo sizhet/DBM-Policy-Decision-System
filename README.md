@@ -153,7 +153,7 @@ Year: 2026
 
 License: Apache
 
-DOI: TBD
+DOI: 10.5281/zenodo.19411757
 
 Repository: https://github.com/sizhet/DBM-Policy-Decision-System
 
